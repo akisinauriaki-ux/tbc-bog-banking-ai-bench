@@ -1,0 +1,362 @@
+# TBC Bank Developer Documentation (Generated Clean-Room Index)
+
+> Public API documentation for TBC Bank: Business Integration Services (BIS Accounts & Transfers), TBC Checkout (E-Commerce), TBC ID (OAuth 2.0 / OIDC / CIBA), Online Installments, Mortgage Loans, Exchange Rates, and Open Banking (AIS / PIS).
+
+## .NET Packages
+
+- [SOAP Security Header](https://developers.tbcbank.ge/docs/soap-security-header): .NET Packages - SOAP Security Header: Adding SOAP Security Header in C#
+
+## 4xx class errors
+
+- [400 Bad Request](https://developers.tbcbank.ge/docs/error-type-400): 4xx class errors - 400 Bad Request: The request is not understood by the server due to incorrect syntax. This means that the server was unable to understand the request and process it because the request sent by the client was not forme
+- [401 Unauthorized](https://developers.tbcbank.ge/docs/error-type-401): 4xx class errors - 401 Unauthorized: This status code means that the user authentication is required by the server or that authorization for the provided credentials was refused - this might mean that one or both of your credentials are
+- [403 Forbidden](https://developers.tbcbank.ge/docs/error-type-403): 4xx class errors - 403 Forbidden: The request sent to the server was formed correctly and authorization parameters were valid but the target server refused it.
+- [404 Not Found](https://developers.tbcbank.ge/docs/error-type-404): 4xx class errors - 404 Not Found: The server responds with this error when it understands the HTTP request sent by the caller but can not find requested resources for the given URL. No indication is given in the server response if the
+- [405 Method Not Allowed](https://developers.tbcbank.ge/docs/error-type-405): 4xx class errors - 405 Method Not Allowed: The methods to access resources on web servers are defined in the HTTP protocol, but all web servers can be configured to allow or disallow any method.
+- [409 Conflict](https://developers.tbcbank.ge/docs/error-type-409): 4xx class errors - 409 Conflict: The web server responds with this error when it considers the client request as legitimate, but the request could not be completed due to a conflict with the current state of the resource. The respons
+- [413 Response Payload Too Large](https://developers.tbcbank.ge/docs/error-type-413): 4xx class errors - 413 Response Payload Too Large: The HTTP 413 Payload Too Large response status code indicates that the response entity is larger than the limits defined by the server; the server might close the connection or return a Retry-After he
+- [415 Unsupported Media Type](https://developers.tbcbank.ge/docs/error-type-415): 4xx class errors - 415 Unsupported Media Type: The server is refusing to service the request because the entity of the request is in a format not supported by the requested resource for the requested method.
+- [429 Too Many Requests](https://developers.tbcbank.ge/docs/error-type-429): 4xx class errors - 429 Too Many Requests: This status code notifies that too many requests were made by the caller in a predefined time period. This mechanism throttles the number of requests processed and sent to a backend by an API Service,
+
+## 5xx class errors
+
+- [500 Internal Server Error](https://developers.tbcbank.ge/docs/error-type-500): 5xx class errors - 500 Internal Server Error: The web server responds with this status code when it has encountered an unexpected condition, which prevented it from fulfilling the request by the client.
+- [503 Service Unavailable](https://developers.tbcbank.ge/docs/error-type-503): 5xx class errors - 503 Service Unavailable: The web server responds with this status code when it is currently unable to handle the request due to a temporary overloading or maintenance of the server. This is a temporary condition, which will b
+
+## API
+
+- [API Overview](https://developers.tbcbank.ge/docs/checkout-api-overview): API - API Overview: **Methods for integrating TBC E-Commerce service into your e-commerce solution.**
+- [/Cancel E-Commerce payment](https://developers.tbcbank.ge/docs/checkout-cancel-checkout-payment): API - /Cancel E-Commerce payment: **Request cancels payment for given payId.**
+- [/Complete pre-authorized payment](https://developers.tbcbank.ge/docs/checkout-complete-pre-authorized-payment): API - /Complete pre-authorized payment: **Request completes pre-authorized payment for given payId.**
+- [/Create E-Commerce payment](https://developers.tbcbank.ge/docs/checkout-create-checkout-payment): API - /Create E-Commerce payment: ***
+- [/Create E-Commerce payment with SPLIT](https://developers.tbcbank.ge/docs/checkout-create-checkout-payment-with-split): API - /Create E-Commerce payment with SPLIT: ***
+- [/Delete recurring payment](https://developers.tbcbank.ge/docs/checkout-delete-recurring-payment): API - /Delete recurring payment: **Request deletes recurring payment for given recId.**
+- [/Execute recurring payment](https://developers.tbcbank.ge/docs/checkout-execute-recurring-payment): API - /Execute recurring payment: **Request initiates recurring payment.**
+- [/Get access token](https://developers.tbcbank.ge/docs/checkout-get-checkout-access-token): API - /Get access token: ---
+- [/Get E-Commerce payment details](https://developers.tbcbank.ge/docs/checkout-get-checkout-payment-details): API - /Get E-Commerce payment details: **Request returns payment status and details for given payId.**
+- [/Create QR Payment](https://developers.tbcbank.ge/docs/create-qr-payment): API - /Create QR Payment: Generate and return QR content value on which QR image should be generated.
+- [Convert with commercial rates](https://developers.tbcbank.ge/docs/exchangerates-convert-with-commercial-rates): API - Convert with commercial rates: ***
+- [Convert with official rates](https://developers.tbcbank.ge/docs/exchangerates-convert-with-official-rates): API - Convert with official rates: ***
+- [Get Commercial Rates](https://developers.tbcbank.ge/docs/exchangerates-get-commercial-rates): API - Get Commercial Rates: ***
+- [Get official rates](https://developers.tbcbank.ge/docs/exchangerates-get-official-rates): API - Get official rates: ***
+- [/Get Access Token](https://developers.tbcbank.ge/docs/get-access-token): API - /Get Access Token: ***
+- [/Get QR Payment Status](https://developers.tbcbank.ge/docs/get-qr-payment-status): API - /Get QR Payment Status: Request returns payment status and details for given payId
+- [Initiate Online Mortgage Short Lead](https://developers.tbcbank.ge/docs/initiate-online-mortgage-short-lead): API - Initiate Online Mortgage Short Lead: ***
+- [Initiate QR Installment Application](https://developers.tbcbank.ge/docs/initiate-qr-installment-application): API - Initiate QR Installment Application: ***
+- [Cancel application](https://developers.tbcbank.ge/docs/installment-cancel-application): API - Cancel application: Merchant can cancel application (for example, if the products requested during application process are no longer available and loan disbursementt can not be completed). Application request session-id
+- [Confirm application](https://developers.tbcbank.ge/docs/installment-confirm-application): API - Confirm application: After installment loan application is reviewed and finished from bank back office, Merchant might be required to confirm that products requested during application process are available and loan disbu
+- [Get access token](https://developers.tbcbank.ge/docs/installment-get-access-token): API - Get access token: Use this endpoint to request access_token with app Key and Secret from your developer app.
+- [/Get application status](https://developers.tbcbank.ge/docs/installment-get-application-status): API - /Get application status: ***
+- [Test merchantKey and campaingId](https://developers.tbcbank.ge/docs/installment-getting-merchant-credentials): API - Test merchantKey and campaingId: ***
+- [Getting merchantKey and campaignId](https://developers.tbcbank.ge/docs/installment-getting-merchantkey-and-campaignid): API - Getting merchantKey and campaignId: ***
+- [Initiate online installment application](https://developers.tbcbank.ge/docs/installment-initiate-online-installment-application): API - Initiate online installment application: Method should be used for initiating Online Installment application. Merchant parameters, product list and price should be passed in request. Successful response body will contain sessionId for given
+- [Merchant Application Status Sync](https://developers.tbcbank.ge/docs/installment-merchant-application-status-sync): API - Merchant Application Status Sync: ***
+- [Merchant Application Statuses](https://developers.tbcbank.ge/docs/installment-merchant-application-statuses): API - Merchant Application Statuses: ***
+- [Get access token](https://developers.tbcbank.ge/docs/mortgage-get-access-token-1): API - Get access token: Method for requesting access-token for online mortgage service.
+- [Initiate Online Mortgage Lead](https://developers.tbcbank.ge/docs/mortgage-initiate-online-mortgage-lead): API - Initiate Online Mortgage Lead: ***
+
+## Access Token
+
+- [Get access token](https://developers.tbcbank.ge/reference/online-installments-get-access-token-api): Access Token - Get access token: API: online-installments
+- [Get access token](https://developers.tbcbank.ge/reference/online-mortgage-get-access-token-api): Access Token - Get access token: API: mortgage-loans
+- [Get access token](https://developers.tbcbank.ge/reference/post_v1-tpay-access-token): Access Token - Get access token: API: TBC CHECKOUT
+
+## Account Balances
+
+- [Get account balance](https://developers.tbcbank.ge/reference/bis-accounts-get-account-balance): Account Balances - Get account balance: API: Business Integration Services - Accounts
+
+## Account Movements
+
+- [Get account movement by ID](https://developers.tbcbank.ge/reference/bis-accounts-get-account-movement-by-id): Account Movements - Get account movement by ID: API: Business Integration Services - Accounts
+- [Get account movements](https://developers.tbcbank.ge/reference/bis-accounts-get-account-movements): Account Movements - Get account movements: API: Business Integration Services - Accounts
+
+## Account Statements
+
+- [Get account statement](https://developers.tbcbank.ge/reference/bis-accounts-get-account-statement): Account Statements - Get account statement: API: Business Integration Services - Accounts
+
+## Accounts
+
+- [Read Account Balances](https://developers.tbcbank.ge/reference/aisreadaccountbalance): Accounts - Read Account Balances: API: OpenBanking Services - Account Information Service (AIS)
+- [Read Account Details](https://developers.tbcbank.ge/reference/aisreadaccountdetails): Accounts - Read Account Details: API: OpenBanking Services - Account Information Service (AIS)
+- [Read Account List](https://developers.tbcbank.ge/reference/aisreadaccountlist): Accounts - Read Account List: API: OpenBanking Services - Account Information Service (AIS)
+- [Read Account Transaction List](https://developers.tbcbank.ge/reference/aisreadaccounttransactionlist): Accounts - Read Account Transaction List: API: OpenBanking Services - Account Information Service (AIS)
+
+## Applications
+
+- [Cancel application](https://developers.tbcbank.ge/reference/online-installments-cancel-application): Applications - Cancel application: API: online-installments
+- [Confirm application](https://developers.tbcbank.ge/reference/online-installments-confirm-application): Applications - Confirm application: API: online-installments
+- [Get application status](https://developers.tbcbank.ge/reference/online-installments-get-application-status-api): Applications - Get application status: API: online-installments
+- [Initiate online installment application](https://developers.tbcbank.ge/reference/online-installments-initiate-application): Applications - Initiate online installment application: API: online-installments
+- [Initiate QR installment application](https://developers.tbcbank.ge/reference/qr-installments-initiate-application): Applications - Initiate QR installment application: API: online-installments
+
+## Authentication
+
+- [Request an access token](https://developers.tbcbank.ge/reference/bis-accounts-get-access-token): Authentication - Request an access token: API: Business Integration Services - Accounts
+- [Request an access token](https://developers.tbcbank.ge/reference/bis-transfers-get-access-token): Authentication - Request an access token: API: Business Integration Services - Transfers
+
+## Authorization Code Flow
+
+- [Start Authorization Code Flow](https://developers.tbcbank.ge/reference/tbc-id-authorize): Authorization Code Flow - Start Authorization Code Flow: API: TBC ID (Userinfo)
+- [Exchange authorization code for tokens](https://developers.tbcbank.ge/reference/tbc-id-oauth-token): Authorization Code Flow - Exchange authorization code for tokens: API: TBC ID (Userinfo)
+
+## Batch Transfers
+
+- [Get batch transfer by external ID](https://developers.tbcbank.ge/reference/bis-transfers-get-batch-transfer-by-external-id): Batch Transfers - Get batch transfer by external ID: API: Business Integration Services - Transfers
+- [Get batch transfer status](https://developers.tbcbank.ge/reference/bis-transfers-get-batch-transfer-status): Batch Transfers - Get batch transfer status: API: Business Integration Services - Transfers
+- [Import a batch transfer order](https://developers.tbcbank.ge/reference/bis-transfers-import-batch-transfer): Batch Transfers - Import a batch transfer order: API: Business Integration Services - Transfers
+
+## CIBA Flow
+
+- [Initiate or complete CIBA authentication](https://developers.tbcbank.ge/reference/tbc-id-bc-authorization): CIBA Flow - Initiate or complete CIBA authentication: API: TBC ID (Userinfo)
+- [Exchange a CIBA request for tokens](https://developers.tbcbank.ge/reference/tbc-id-ciba-oauth-token): CIBA Flow - Exchange a CIBA request for tokens: API: TBC ID (Userinfo)
+
+## Card Accounts
+
+- [Read Card Account Balances](https://developers.tbcbank.ge/reference/aisreadcardaccountbalances): Card Accounts - Read Card Account Balances: API: OpenBanking Services - Account Information Service (AIS)
+- [Read Card Account Details](https://developers.tbcbank.ge/reference/aisreadcardaccountdetails): Card Accounts - Read Card Account Details: API: OpenBanking Services - Account Information Service (AIS)
+- [Read Card Account List](https://developers.tbcbank.ge/reference/aisreadcardaccountlist): Card Accounts - Read Card Account List: API: OpenBanking Services - Account Information Service (AIS)
+- [Read Card Account Transaction List](https://developers.tbcbank.ge/reference/aisreadcardaccounttransactionlist): Card Accounts - Read Card Account Transaction List: API: OpenBanking Services - Account Information Service (AIS)
+
+## Classification
+
+- [Real Estate Type Code](https://developers.tbcbank.ge/docs/real-estate-type-code): Classification - Real Estate Type Code: ***
+
+## Classifications
+
+- [Payment Methods](https://developers.tbcbank.ge/docs/payment-methods): Classifications - Payment Methods: TBC E-Commerce payment methods
+- [Result Code](https://developers.tbcbank.ge/docs/result-code): Classifications - Result Code: ***
+
+## Commercial Rates
+
+- [Convert with commercial rates](https://developers.tbcbank.ge/reference/exchangerates-convert-with-commercial-rates-api): Commercial Rates - Convert with commercial rates: API: exchange-rates
+- [Get commercial rates](https://developers.tbcbank.ge/reference/exchangerates-get-commercial-rates-api): Commercial Rates - Get commercial rates: API: exchange-rates
+
+## Consents
+
+- [Create Consent](https://developers.tbcbank.ge/reference/aiscreateconsent): Consents - Create Consent: API: OpenBanking Services - Account Information Service (AIS)
+- [Delete Consent](https://developers.tbcbank.ge/reference/aisdeleteconsent): Consents - Delete Consent: API: OpenBanking Services - Account Information Service (AIS)
+- [Get Consent Authorisations](https://developers.tbcbank.ge/reference/aisgetconsentauthorizations): Consents - Get Consent Authorisations: API: OpenBanking Services - Account Information Service (AIS)
+- [Get Consent Details](https://developers.tbcbank.ge/reference/aisgetconsentdetails): Consents - Get Consent Details: API: OpenBanking Services - Account Information Service (AIS)
+- [Read Consent Authorisation Status](https://developers.tbcbank.ge/reference/aisreadconsentauthorizationstatus): Consents - Read Consent Authorisation Status: API: OpenBanking Services - Account Information Service (AIS)
+- [Read Consent Status](https://developers.tbcbank.ge/reference/aisreadconsentstatus): Consents - Read Consent Status: API: OpenBanking Services - Account Information Service (AIS)
+- [Start Consent Authorisation Process](https://developers.tbcbank.ge/reference/aisstartconsentauthorization): Consents - Start Consent Authorisation Process: API: OpenBanking Services - Account Information Service (AIS)
+
+## DeferredPayments
+
+- [Get deferred payment request](https://developers.tbcbank.ge/reference/get_v2-deferred-payments-payment-product-paymentid): DeferredPayments - Get deferred payment request: API: OpenBanking Services - Payments V2
+- [Get multiple deferred payment request](https://developers.tbcbank.ge/reference/get_v2-multiple-deferred-payments-payment-product-paymentid): DeferredPayments - Get multiple deferred payment request: API: OpenBanking Services - Payments V2
+- [Get secured deferred payment request](https://developers.tbcbank.ge/reference/get_v2-secured-deferred-payments-payment-product-paymentid): DeferredPayments - Get secured deferred payment request: API: OpenBanking Services - Payments V2
+- [Payment initiation for deferred payments](https://developers.tbcbank.ge/reference/post_v2-deferred-payment-service-payment-product-1): DeferredPayments - Payment initiation for deferred payments: API: OpenBanking Services - Payments V2
+
+## Digital Certificate
+
+- [Attach Digital Certificate](https://developers.tbcbank.ge/docs/attach-digital-certificate): Digital Certificate - Attach Digital Certificate: ***
+- [How to use Digital Certificate](https://developers.tbcbank.ge/docs/how-to-use-digital-certificate): Digital Certificate - How to use Digital Certificate: ***
+
+## ExtendedPayments
+
+- [Extended payment cancellation request](https://developers.tbcbank.ge/reference/delete_v2-extended-payment-service-payment-product-paymentid-1): ExtendedPayments - Extended payment cancellation request: API: OpenBanking Services - Payments V2
+- [Get transaction status request](https://developers.tbcbank.ge/reference/get_v2-extended-payment-service-payment-product-paymentid-status-1): ExtendedPayments - Get transaction status request: API: OpenBanking Services - Payments V2
+
+## ExtendedPaymentsInitiations
+
+- [Cancellation for initiations](https://developers.tbcbank.ge/reference/delete_v2-extended-payment-service-payment-product-paymentid-initiations-initiationid-1): ExtendedPaymentsInitiations - Cancellation for initiations: API: OpenBanking Services - Payments V2
+- [Get initiations request](https://developers.tbcbank.ge/reference/get_v2-extended-payment-service-payment-product-paymentid-initiations-1): ExtendedPaymentsInitiations - Get initiations request: API: OpenBanking Services - Payments V2
+- [Retrieve initiation request](https://developers.tbcbank.ge/reference/get_v2-extended-payment-service-payment-product-paymentid-initiations-initiationid-1): ExtendedPaymentsInitiations - Retrieve initiation request: API: OpenBanking Services - Payments V2
+- [Get initiation status request](https://developers.tbcbank.ge/reference/get_v2-extended-payment-service-payment-product-paymentid-initiations-initiationid-status-1): ExtendedPaymentsInitiations - Get initiation status request: API: OpenBanking Services - Payments V2
+- [Initiation for deferred payments](https://developers.tbcbank.ge/reference/post_v2-deferred-payment-service-payment-product-paymentid-initiations-1): ExtendedPaymentsInitiations - Initiation for deferred payments: API: OpenBanking Services - Payments V2
+- [Initiation for multiple recurring payments](https://developers.tbcbank.ge/reference/post_v2-multiple-recurring-payments-payment-product-paymentid-initiations-1): ExtendedPaymentsInitiations - Initiation for multiple recurring payments: API: OpenBanking Services - Payments V2
+- [Initiation for recurring payment](https://developers.tbcbank.ge/reference/post_v2-recurring-payments-payment-product-paymentid-initiations-1): ExtendedPaymentsInitiations - Initiation for recurring payment: API: OpenBanking Services - Payments V2
+
+## Leads
+
+- [Initiate online mortgage lead](https://developers.tbcbank.ge/reference/online-mortgage-initiate-lead-api): Leads - Initiate online mortgage lead: API: mortgage-loans
+- [Initiate online mortgage short lead](https://developers.tbcbank.ge/reference/online-mortgage-short-lead-api): Leads - Initiate online mortgage short lead: API: mortgage-loans
+
+## Merchant Applications
+
+- [Merchant Application Status Sync](https://developers.tbcbank.ge/reference/online-installments-merchant-application-status-sync): Merchant Applications - Merchant Application Status Sync: API: online-installments
+- [Merchant Application Statuses](https://developers.tbcbank.ge/reference/online-installments-merchant-application-statuses-api): Merchant Applications - Merchant Application Statuses: API: online-installments
+
+## OAuth
+
+- [Authorization](https://developers.tbcbank.ge/reference/aisoauthauhtorization): OAuth - Authorization: API: OpenBanking Services - Account Information Service (AIS)
+- [Authorize or Refresh Token](https://developers.tbcbank.ge/reference/aisoauthtoken): OAuth - Authorize or Refresh Token: API: OpenBanking Services - Account Information Service (AIS)
+- [Get Oauth Authorization Server](https://developers.tbcbank.ge/reference/aisopenidconfiguration): OAuth - Get Oauth Authorization Server: API: OpenBanking Services - Account Information Service (AIS)
+- [Oauth Authorization Server](https://developers.tbcbank.ge/reference/get_openbanking-oauth-well-known-oauth-authorization-server): OAuth - Oauth Authorization Server: API: OpenBanking Services - Payments
+- [Authorization](https://developers.tbcbank.ge/reference/get_psd2-openbanking-oauth-authorize): OAuth - Authorization: API: OpenBanking Services - Payments
+- [Authorize or Refresh Token](https://developers.tbcbank.ge/reference/post_openbanking-oauth-token): OAuth - Authorize or Refresh Token: API: OpenBanking Services - Payments
+
+## Obtaining Merchant Credentials
+
+- [Callback URL](https://developers.tbcbank.ge/docs/checkout-callback-url): Obtaining Merchant Credentials - Callback URL: ***
+- [Merchant Dashboard and Credentials](https://developers.tbcbank.ge/docs/checkout-merchant-dashboard-and-credentials): Obtaining Merchant Credentials - Merchant Dashboard and Credentials: ***
+- [Registering Merchant Account](https://developers.tbcbank.ge/docs/checkout-registering-merchant-account): Obtaining Merchant Credentials - Registering Merchant Account: ***
+- [Registering Merchant Account](https://developers.tbcbank.ge/docs/installment-registering-merchant-account): Obtaining Merchant Credentials - Registering Merchant Account: ***
+- [Registering Merchant Account](https://developers.tbcbank.ge/docs/mortgage-registering-merchant-account): Obtaining Merchant Credentials - Registering Merchant Account: ***
+
+## Official Rates
+
+- [Convert with official rates](https://developers.tbcbank.ge/reference/exchangerates-convert-with-official-rates-api): Official Rates - Convert with official rates: API: exchange-rates
+- [Get official rates](https://developers.tbcbank.ge/reference/exchangerates-get-official-rates-api): Official Rates - Get official rates: API: exchange-rates
+
+## OpenID Connect Discovery
+
+- [Get OpenID Provider configuration](https://developers.tbcbank.ge/reference/tbc-id-openid-configuration): OpenID Connect Discovery - Get OpenID Provider configuration: API: TBC ID (Userinfo)
+
+## Payment
+
+- [Get E-Commerce payment details](https://developers.tbcbank.ge/reference/get_v1-tpay-payments-payid): Payment - Get E-Commerce payment details: API: TBC CHECKOUT
+- [Create E-Commerce payment](https://developers.tbcbank.ge/reference/post_v1-tpay-payments): Payment - Create E-Commerce payment: API: TBC CHECKOUT
+- [Execute recurring payment](https://developers.tbcbank.ge/reference/post_v1-tpay-payments-execution): Payment - Execute recurring payment: API: TBC CHECKOUT
+- [Cancel E-Commerce payment](https://developers.tbcbank.ge/reference/post_v1-tpay-payments-payid-cancel): Payment - Cancel E-Commerce payment: API: TBC CHECKOUT
+- [Complete pre-authorized payment](https://developers.tbcbank.ge/reference/post_v1-tpay-payments-payid-completion): Payment - Complete pre-authorized payment: API: TBC CHECKOUT
+- [Delete recurring payment](https://developers.tbcbank.ge/reference/post_v1-tpay-payments-recid-delete): Payment - Delete recurring payment: API: TBC CHECKOUT
+
+## Payments
+
+- [Payment cancellation request](https://developers.tbcbank.ge/reference/delete_v1-payment-service-payment-product-paymentid): Payments - Payment cancellation request: API: OpenBanking Services - Payments
+- [Secured payment cancellation request](https://developers.tbcbank.ge/reference/delete_v2-secured-payments-payment-product-paymentid): Payments - Secured payment cancellation request: API: OpenBanking Services - Payments V2
+- [Get bulk payment information](https://developers.tbcbank.ge/reference/get_v1-bulk-payments-payment-product-paymentid): Payments - Get bulk payment information: API: OpenBanking Services - Payments
+- [Payment initiation request](https://developers.tbcbank.ge/reference/get_v1-bulk-payments-payment-product-paymentid-status): Payments - Payment initiation request: API: OpenBanking Services - Payments
+- [Get Authorisations](https://developers.tbcbank.ge/reference/get_v1-payment-service-payment-product-paymentid-authorisations): Payments - Get Authorisations: API: OpenBanking Services - Payments
+- [Get Authorisation Sca Status](https://developers.tbcbank.ge/reference/get_v1-payment-service-payment-product-paymentid-authorisations-authorisationid): Payments - Get Authorisation Sca Status: API: OpenBanking Services - Payments
+- [Get Cancellation Authorisations](https://developers.tbcbank.ge/reference/get_v1-payment-service-payment-product-paymentid-cancellation-authorisations): Payments - Get Cancellation Authorisations: API: OpenBanking Services - Payments
+- [Get Cancellation Authorisation Status](https://developers.tbcbank.ge/reference/get_v1-payment-service-payment-product-paymentid-cancellation-authorisations-authorisationid): Payments - Get Cancellation Authorisation Status: API: OpenBanking Services - Payments
+- [Get payment information](https://developers.tbcbank.ge/reference/get_v1-payments-payment-product-paymentid): Payments - Get payment information: API: OpenBanking Services - Payments
+- [Payment initiation request](https://developers.tbcbank.ge/reference/get_v1-payments-payment-product-paymentid-status): Payments - Payment initiation request: API: OpenBanking Services - Payments
+- [Get secured payment](https://developers.tbcbank.ge/reference/get_v2-secured-payments-payment-product-paymentid): Payments - Get secured payment: API: OpenBanking Services - Payments V2
+- [Get secured payment status](https://developers.tbcbank.ge/reference/get_v2-secured-payments-payment-product-paymentid-status): Payments - Get secured payment status: API: OpenBanking Services - Payments V2
+- [Bulk Payment Initiation request](https://developers.tbcbank.ge/reference/post_v1-bulk-payments-payment-product): Payments - Bulk Payment Initiation request: API: OpenBanking Services - Payments
+- [Start the authorisation process for a payment initiation](https://developers.tbcbank.ge/reference/post_v1-payment-service-payment-product-paymentid-authorisations): Payments - Start the authorisation process for a payment initiation: API: OpenBanking Services - Payments
+- [Cancellation Authorisations](https://developers.tbcbank.ge/reference/post_v1-payment-service-payment-product-paymentid-cancellation-authorisations): Payments - Cancellation Authorisations: API: OpenBanking Services - Payments
+- [Payment Initiation request](https://developers.tbcbank.ge/reference/post_v1-payments-payment-product): Payments - Payment Initiation request: API: OpenBanking Services - Payments
+- [Secured payment initiation request](https://developers.tbcbank.ge/reference/post_v2-secured-payments-payment-product-1): Payments - Secured payment initiation request: API: OpenBanking Services - Payments V2
+
+## Plug-ins
+
+- [CS Cart](https://developers.tbcbank.ge/docs/checkout-cs-cart): Plug-ins - CS Cart: CsCart Plugin Installation
+- [Kovzy](https://developers.tbcbank.ge/docs/checkout-kovzy): Plug-ins - Kovzy: TBC E-Commerce integration on Kovzy.com platform for online restaurants
+- [Overview](https://developers.tbcbank.ge/docs/checkout-plugins-overview): Plug-ins - Overview: - [Register your company](https://developers.tbcbank.ge/docs/checkout-registering-merchant-account) as a merchant to obtain your <a href="/docs/checkout-merchant-dashboard-and-credentials" target="_bl
+- [Storera](https://developers.tbcbank.ge/docs/checkout-storera): Plug-ins - Storera: TBC E-Commerce activation for online stores set up with Storera.ge
+- [WordPress WooCommerce](https://developers.tbcbank.ge/docs/checkout-woocommerce): Plug-ins - WordPress WooCommerce: WordPress – Woocommerce plugin installation
+
+## RecurringPayments
+
+- [Get multiple recurring payment request](https://developers.tbcbank.ge/reference/get_v2-multiple-recurring-payments-payment-product-paymentid): RecurringPayments - Get multiple recurring payment request: API: OpenBanking Services - Payments V2
+- [Get recurring payment request](https://developers.tbcbank.ge/reference/get_v2-recurring-payments-payment-product-paymentid): RecurringPayments - Get recurring payment request: API: OpenBanking Services - Payments V2
+- [Payment initiation for multiple recurring payments](https://developers.tbcbank.ge/reference/post_v2-multiple-recurring-payments-payment-product-1): RecurringPayments - Payment initiation for multiple recurring payments: API: OpenBanking Services - Payments V2
+- [Payment initiation for recurring payments](https://developers.tbcbank.ge/reference/post_v2-recurring-payments-payment-product-1): RecurringPayments - Payment initiation for recurring payments: API: OpenBanking Services - Payments V2
+
+## Services
+
+- [Account Movement](https://developers.tbcbank.ge/docs/account-movement): Services - Account Movement: This web service interface is used for obtaining account movements data from bank system based on provided filter parameter(s).
+- [BIS - Accounts](https://developers.tbcbank.ge/docs/bis-accounts): Services - BIS - Accounts: <Callout icon="🔒" theme="default">
+- [BIS - Transfers](https://developers.tbcbank.ge/docs/bis-transfers): Services - BIS - Transfers: <Callout icon="🔒" theme="default">
+- [Error Handling](https://developers.tbcbank.ge/docs/error-handling): Services - Error Handling: This chapter defines error codes and their meaning. All errors are propagated to client systems as SOAP fault messages defined in corresponding standard.
+- [Get Account Statement](https://developers.tbcbank.ge/docs/get-account-statement): Services - Get Account Statement: This web service interface is used for obtaining account statement data from bank system.
+- [Get Payment ID](https://developers.tbcbank.ge/docs/get-payment-id): Services - Get Payment ID: When **ImportSinglePaymentOrdersRequestIo **is successfull, Bank's digital channel (Internet/Mobile banking; DBI integration service), assigns unique ID to each imported single payment order and retur
+- [Import Batch Payments](https://developers.tbcbank.ge/docs/import-batch-payments): Services - Import Batch Payments: Import batch payment order functionality allows external systems to import only 1 batch of single payment orders per request.
+- [Import Single Payments](https://developers.tbcbank.ge/docs/import-single-payments): Services - Import Single Payments: Import single payment orders functionality allows external systems to import single payment orders into the bank system. In one call 1 to 10 single payment orders of different types can be imported.
+- [Password Change](https://developers.tbcbank.ge/docs/password-change): Services - Password Change: ***
+- [Payment Order Status](https://developers.tbcbank.ge/docs/payment-order-status): Services - Payment Order Status: Get payment order status functionality provides user with the possibility to check the status of any
+- [Authorization Code Flow](https://developers.tbcbank.ge/docs/tbc-id-authorization-code-flow): Services - Authorization Code Flow: Use the OpenID Connect authorization code flow to authenticate a user with TBC ID and obtain tokens for your application.
+- [Client-Initiated Backchannel Authentication Flow](https://developers.tbcbank.ge/docs/tbc-id-ciba-flow): Services - Client-Initiated Backchannel Authentication Flow: TBC Bank's TBC ID service supports **Client-Initiated Backchannel Authentication (CIBA)**, allowing your application to authenticate a user without redirecting the user's browser. This page describes
+- [OpenID Connect Discovery](https://developers.tbcbank.ge/docs/tbc-id-openid-connect-discovery): Services - OpenID Connect Discovery: Use the OpenID Provider configuration to find TBC Bank's endpoint URLs and the capabilities available in each environment. Retrieve the configuration for the same environment you use for authenticatio
+- [Userinfo](https://developers.tbcbank.ge/docs/tbc-id-userinfo): Services - Userinfo: After obtaining an access token through the [authorization code flow](./tbc-id-authorization-code) or [client-initiated backchannel authentication (CIBA)](./tbc-id-ciba), call the UserInfo endpoint to
+
+## Services > BIS - Accounts
+
+- [Get Account Balance](https://developers.tbcbank.ge/docs/bis-get-account-balance): Services > BIS - Accounts - Get Account Balance: The **Account Balance** service is used to retrieve current balance information for the specified account and currency.
+- [Get Account Movement By Id](https://developers.tbcbank.ge/docs/bis-get-account-movement-by-id): Services > BIS - Accounts - Get Account Movement By Id: The **Get Account Movement by Id** service is used to receive information about one specific transaction by `movementId.`
+- [Get Account Movements](https://developers.tbcbank.ge/docs/bis-get-account-movements): Services > BIS - Accounts - Get Account Movements: The **Account Movements** service is used to retrieve the list of transactions performed on an account.
+- [Get Account Statement](https://developers.tbcbank.ge/docs/bis-get-account-statement): Services > BIS - Accounts - Get Account Statement: The **Account Statement** service is used to retrieve summary account statement information for the specified account, currency and period.
+
+## Services > BIS - Transfers
+
+- [Get Batch Transfer Id](https://developers.tbcbank.ge/docs/bis-get-batch-transfer-id): Services > BIS - Transfers - Get Batch Transfer Id: The **Get Batch Transfer Id by batchTransferExternalId** service is used when the client's system successfully sent a batch transfer request but, for technical reasons, did not receive the response th
+- [Get Single Transfer Id](https://developers.tbcbank.ge/docs/bis-get-single-transfer-id): Services > BIS - Transfers - Get Single Transfer Id: The **Get Single Transfer Id by transferExternalId** service is used when the client's system successfully sent a single transfer request, but for technical reasons, did not receive the response that
+- [Get Transfer Status](https://developers.tbcbank.ge/docs/bis-get-transfer-status): Services > BIS - Transfers - Get Transfer Status: The **Get Transfer Status** services is used to retrieve the status of a single or batch transfer initiated through the API. The service returns the current transfer status.
+- [Import Batch Transfers](https://developers.tbcbank.ge/docs/bis-import-batch-transfers): Services > BIS - Transfers - Import Batch Transfers: The **Import Batch Transfers** service is used to create one batch in a single request, which may contain multiple transfer orders.
+- [Import Single Transfer](https://developers.tbcbank.ge/docs/bis-import-single-transfer): Services > BIS - Transfers - Import Single Transfer: The **Import Single Transfer** service is used to create one or more single transfer orders in the bank's system.
+
+## Single Transfers
+
+- [Get single transfer by external ID](https://developers.tbcbank.ge/reference/bis-transfers-get-single-transfer-by-external-id): Single Transfers - Get single transfer by external ID: API: Business Integration Services - Transfers
+- [Get single transfer status](https://developers.tbcbank.ge/reference/bis-transfers-get-single-transfer-status): Single Transfers - Get single transfer status: API: Business Integration Services - Transfers
+- [Import single transfer orders](https://developers.tbcbank.ge/reference/bis-transfers-import-single-transfers): Single Transfers - Import single transfer orders: API: Business Integration Services - Transfers
+
+## Test Environment
+
+- [Test Scenarios - Accounts](https://developers.tbcbank.ge/docs/bis-test-scenarios-accounts): Test Environment - Test Scenarios - Accounts: ***
+- [Test Scenarios - Transfers](https://developers.tbcbank.ge/docs/bis-test-scenarios-transfers): Test Environment - Test Scenarios - Transfers: ***
+
+## Testing
+
+- [Testing on Production](https://developers.tbcbank.ge/docs/checkout-testing-on-production): Testing - Testing on Production: ***
+- [Try Postman Collection](https://developers.tbcbank.ge/docs/checkout-testing-with-postman): Testing - Try Postman Collection: Postman collection and preconfigured environment can be downloaded from the following link: [TBC E-Commerce API Services Collection](https://myapps.tbcbank.ge/files/TBC_Checkout_Sample_Requests.zip)
+- [Testing with Postman](https://developers.tbcbank.ge/docs/exchangerates-testing-with-postman): Testing - Testing with Postman: ---
+- [Testing with Postman](https://developers.tbcbank.ge/docs/installment-testing-with-postman): Testing - Testing with Postman: ***
+- [Testing with Postman](https://developers.tbcbank.ge/docs/mortgage-testing-with-postman): Testing - Testing with Postman: ---
+
+## Userinfo
+
+- [Get authorized user information](https://developers.tbcbank.ge/reference/tbc-id-userinfo): Userinfo - Get authorized user information: API: TBC ID (Userinfo)
+
+## docs
+
+- [4xx class errors](https://developers.tbcbank.ge/docs/4xx-class-errors): docs - 4xx class errors: ***
+- [5xx class errors](https://developers.tbcbank.ge/docs/5xx-class-errors): docs - 5xx class errors: ***
+- [Get a Certificate for API Products](https://developers.tbcbank.ge/docs/api-product-certificates): docs - Get a Certificate for API Products: Based on standard requirements, when working with PSD2 APIs, a certificate-secured integration is required.
+- [Authorization Types](https://developers.tbcbank.ge/docs/authorization-with-api): docs - Authorization Types: ---
+- [Mapping to the old SOAP service - Account Movements](https://developers.tbcbank.ge/docs/bis-account-movements-soap-rest-map): docs - Mapping to the old SOAP service - Account Movements: <Callout icon="ℹ️" theme="info">
+- [Authentication](https://developers.tbcbank.ge/docs/bis-authentication): docs - Authentication: <Callout icon="🔒" theme="default">
+- [Errors](https://developers.tbcbank.ge/docs/bis-errors): docs - Errors: In case of an error, Accounts and Transfers services return a response in **application/problem+json** format. The unified error response fields and service error codes are provided below.
+- [Overview](https://developers.tbcbank.ge/docs/bis-overview): docs - Overview: ***
+- [Production Environment](https://developers.tbcbank.ge/docs/bis-production-environment): docs - Production Environment: ***
+- [Test Environment](https://developers.tbcbank.ge/docs/bis-test-environment): docs - Test Environment: ***
+- [Go LIVE](https://developers.tbcbank.ge/docs/checkout-go-live): docs - Go LIVE: ***
+- [Overview](https://developers.tbcbank.ge/docs/checkout-overview): docs - Overview: ***
+- [SDK](https://developers.tbcbank.ge/docs/checkout-sdk): docs - SDK: A software development kit is a collection of software development tools in one installable package. They facilitate the creation of applications by having a compiler, debugger and sometimes a softwar
+- [Classification](https://developers.tbcbank.ge/docs/classification): docs - Classification: ***
+- [Creating developer account](https://developers.tbcbank.ge/docs/create-developer-account): docs - Creating developer account: ***
+- [Go Live](https://developers.tbcbank.ge/docs/dbi-go-live): docs - Go Live: ***
+- [Overview](https://developers.tbcbank.ge/docs/dbi-overview): docs - Overview: ***
+- [Test Environment Parameters](https://developers.tbcbank.ge/docs/dbi-test-environment-parameters): docs - Test Environment Parameters: ***
+- [FAQ](https://developers.tbcbank.ge/docs/e-commerce-faq): docs - FAQ: Authorization must be carried out using director's personal Internet bank credentials.
+- [Error Code Description](https://developers.tbcbank.ge/docs/error-code-description): docs - Error Code Description: ---
+- [Go LIVE](https://developers.tbcbank.ge/docs/exchangerates-go-live): docs - Go LIVE: ---
+- [Overview](https://developers.tbcbank.ge/docs/exchangerates-overview): docs - Overview: ***
+- [Getting API Key and Secret](https://developers.tbcbank.ge/docs/get-apikey-and-secret): docs - Getting API Key and Secret: ***
+- [Go LIVE](https://developers.tbcbank.ge/docs/installment-go-live): docs - Go LIVE: ***
+- [Overview](https://developers.tbcbank.ge/docs/installment-overview): docs - Overview: ***
+- [SDK](https://developers.tbcbank.ge/docs/installment-sdk): docs - SDK: A software development kit is a collection of software development tools in one installable package. They facilitate the creation of applications by having a compiler, debugger and sometimes a softwar
+- [Overview](https://developers.tbcbank.ge/docs/mortgage-overview): docs - Overview: **Methods for Initiating Mortgage loan application and leads**
+- [SDK](https://developers.tbcbank.ge/docs/mortgage-sdk): docs - SDK: A software development kit is a collection of software development tools in one installable package. They facilitate the creation of applications by having a compiler, debugger and sometimes a softwar
+- [.NET Packages](https://developers.tbcbank.ge/docs/net-packages): docs - .NET Packages: To install **SVCUTIL** tool in your system, open **developer Command Prompt for VS** and run command
+- [Overview](https://developers.tbcbank.ge/docs/open-banking-overview): docs - Overview: ***
+- [Statistics](https://developers.tbcbank.ge/docs/open-banking-statistics): docs - Statistics: <br />
+- [Overview](https://developers.tbcbank.ge/docs/overview): docs - Overview: ***
+- [Payment Buttons](https://developers.tbcbank.ge/docs/payment-buttons-1): docs - Payment Buttons: ***
+- [List of Available Collections](https://developers.tbcbank.ge/docs/postman-collections-list): docs - List of Available Collections: ---
+- [Configuring Environments](https://developers.tbcbank.ge/docs/postman-configuring-environments): docs - Configuring Environments: ---
+- [Get Started with Postman](https://developers.tbcbank.ge/docs/postman-get-started-with-postman-collection): docs - Get Started with Postman: ***
+- [Recipes](https://developers.tbcbank.ge/docs/recipes-1): docs - Recipes: Step-by-step code walkthroughs for API use cases.
+- [Register an app](https://developers.tbcbank.ge/docs/register-app): docs - Register an app: ***
+- [SDK](https://developers.tbcbank.ge/docs/sdk): docs - SDK: A software development kit is a collection of software development tools in one installable package. They facilitate the creation of applications by having a compiler, debugger and sometimes a softwar
+- [Design](https://developers.tbcbank.ge/docs/tbc-id-design): docs - Design: <html lang="en">
+- [Overview](https://developers.tbcbank.ge/docs/tbc-id-overview): docs - Overview: ***
+- [Production Environment](https://developers.tbcbank.ge/docs/tbc-id-production-environment): docs - Production Environment: Before using the production environment, complete the following onboarding steps
+- [Test Environment](https://developers.tbcbank.ge/docs/tbc-id-test-environment): docs - Test Environment: TBC provides clients with sandbox access for integration testing. Access includes a client certificate and test credentials (username and password), delivered through a secure channel.
+
+## reference
+
+- [API Overview](https://developers.tbcbank.ge/reference/aisapioverview): reference - API Overview: **Account Information Service (AIS)** APIs allow third-party applications to access and aggregate bank account data, typically with the account holder's consent. These APIs are part of the [open banki
+- [API Overview](https://developers.tbcbank.ge/reference/bis-accounts-api-overview): reference - API Overview: The **Business Integration Services - Accounts** (BIS - Accounts) allows business clients to connect their ERP, accounting or other business software to TBC Bank account information services. With thi
+- [API Overview](https://developers.tbcbank.ge/reference/bis-transfers-api-overview): reference - API Overview: The **Business Integration Services - Transfers** (BIS - Transfers) allows business clients to connect their ERP, accounting or othe rbusiness software to TBC Bank payment systems. With this API, clie
+- [API Overview](https://developers.tbcbank.ge/reference/exchangerates-api-overview): reference - API Overview: **Exchange Rates** - Methods for fetching official and commercial exchange rates.
+- [API Overview](https://developers.tbcbank.ge/reference/online-installments-api-reference): reference - API Overview: Methods for initiating and managing **TBC online installment** applications from merchant web page.
+- [API Overview](https://developers.tbcbank.ge/reference/online-mortgage-api-overview): reference - API Overview: Methods for initiating **TBC online mortgage leads** from merchant web page.
+- [API Overview](https://developers.tbcbank.ge/reference/payments-api-overview): reference - API Overview: Abbreviations used in the documentation
+- [API Overview](https://developers.tbcbank.ge/reference/tbc-id-api-overview): reference - API Overview: **TBC ID** provides OpenID Connect APIs for authenticating users, obtaining their consent, and retrieving the user information and claims authorized by the user.&#x20;
+- [What's on this page](https://developers.tbcbank.ge/reference/whats-this-page-about): reference - What's on this page: This is page contains detailed description of parameters, sample request/response and guides on how to make API calls for specific API Products that we offer.
