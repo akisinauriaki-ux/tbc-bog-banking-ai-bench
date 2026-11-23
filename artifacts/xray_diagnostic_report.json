@@ -1,0 +1,1491 @@
+{
+  "step": "Step 1 — Corpus X-Ray & TBC vs. BOG Spec-Drift / Security Diagnostic",
+  "corpus_xray": {
+    "combined": {
+      "provider": "combined_tbc_bog",
+      "record_count": 473,
+      "doc_types": {
+        "markdown_doc": 152,
+        "openapi_endpoint": 183,
+        "guide_doc": 129,
+        "reference_doc": 9
+      },
+      "category_count": 56,
+      "top_categories": [
+        [
+          "Business Internet Banking",
+          44
+        ],
+        [
+          "docs",
+          43
+        ],
+        [
+          "NextGenPSD2 XS2A Framework",
+          40
+        ],
+        [
+          "API",
+          29
+        ],
+        [
+          "Payment Manager",
+          22
+        ],
+        [
+          "Sandbox: payments",
+          22
+        ],
+        [
+          "openFinance API Framework XS2A API as PSD2 Interface Implementation Guidelines - Extended Payment Initiation Service",
+          20
+        ],
+        [
+          "Payments",
+          17
+        ],
+        [
+          "Billing",
+          15
+        ],
+        [
+          "Sandbox: billing",
+          15
+        ],
+        [
+          "Services",
+          14
+        ],
+        [
+          "Payment Manager: top-ups",
+          12
+        ],
+        [
+          "Online Installment",
+          11
+        ],
+        [
+          "openFinance API Framework XS2A API as PSD2 Interface Implementation Guidelines - Payment Initiation Service",
+          11
+        ],
+        [
+          "Link Payment",
+          9
+        ]
+      ],
+      "record_token_stats": {
+        "total_tokens": 373059,
+        "min": 25,
+        "p50": 467.0,
+        "mean": 788.7,
+        "p95": 2248.0,
+        "max": 54695
+      },
+      "heading_section_stats": {
+        "section_count": 2047,
+        "min": 4,
+        "p50": 78.0,
+        "mean": 181.5,
+        "p95": 745.0,
+        "max": 10716
+      },
+      "lexical_profile": {
+        "unique_method_paths": 225,
+        "unique_url_paths": 291,
+        "sample_method_paths": [
+          "DELETE /v1/consents/{consentId}",
+          "DELETE /v1/{payment-service}/{payment-product}/{paymentId}",
+          "DELETE /v2/secured-payments/{payment-product}/{paymentId}",
+          "DELETE /v2/{extended-payment-service4}/{payment-product}/{paymentId}/initiations/{initiationId}",
+          "DELETE /v2/{extended-payment-service6}/{payment-product}/{paymentId}",
+          "DELETE /v2/{extended-payment-service}/{payment-product}/{paymentId}",
+          "DELETE /v2/{extended-payment-service}/{payment-product}/{paymentId}/initiations/{initiationId}",
+          "DELETE /v2/{payment-service}/{payment-product}/{paymentId}",
+          "DELETE api/documents/bulk/{key}",
+          "DELETE api/documents/{keys}",
+          "GET /.well-known/oauth-authorization-server",
+          "GET /.well-known/openid-configuration",
+          "GET /bab/v1/accounts/GE48TB7873440574631292/balances/EUR",
+          "GET /bab/v1/accounts/GE48TB7873440574631292/balances/GEL",
+          "GET /bab/v1/accounts/GE48TB7873440574631292/balances/USD",
+          "GET /bab/v1/accounts/movements",
+          "GET /bab/v1/accounts/movements/018383341565.1",
+          "GET /bab/v1/accounts/movements/018716808825.1",
+          "GET /bab/v1/accounts/movements/018716808825.2",
+          "GET /bab/v1/accounts/movements/{id}",
+          "GET /bab/v1/accounts/statements",
+          "GET /bab/v1/accounts/{iban}/balances/{currency}",
+          "GET /bab/v1/transfers/batch/12345",
+          "GET /bab/v1/transfers/batch/184729/status",
+          "GET /bab/v1/transfers/batch/3364/status"
+        ],
+        "http_status_code_mentions": {
+          "400": 238,
+          "200": 228,
+          "500": 174,
+          "401": 167,
+          "404": 115,
+          "403": 95,
+          "405": 79,
+          "409": 76,
+          "415": 75,
+          "503": 75,
+          "429": 48,
+          "201": 44,
+          "202": 13,
+          "204": 7,
+          "504": 2,
+          "422": 1
+        },
+        "unique_technical_identifiers": 754,
+        "top_identifiers": [
+          [
+            "accountNumber",
+            181
+          ],
+          [
+            "documentType",
+            163
+          ],
+          [
+            "resultType",
+            163
+          ],
+          [
+            "paymentId",
+            137
+          ],
+          [
+            "client_id",
+            109
+          ],
+          [
+            "order_id",
+            108
+          ],
+          [
+            "documentNumber",
+            101
+          ],
+          [
+            "purchase_units",
+            100
+          ],
+          [
+            "accountCurrencyCode",
+            93
+          ],
+          [
+            "access_token",
+            77
+          ],
+          [
+            "viewBox",
+            72
+          ],
+          [
+            "creditAccount",
+            67
+          ],
+          [
+            "additionalDescription",
+            64
+          ],
+          [
+            "jwt_token",
+            62
+          ],
+          [
+            "payment_detail",
+            62
+          ],
+          [
+            "debitAccount",
+            59
+          ],
+          [
+            "client_secret",
+            50
+          ],
+          [
+            "tbcButton",
+            49
+          ],
+          [
+            "tbcLogo",
+            49
+          ],
+          [
+            "openFinance",
+            48
+          ],
+          [
+            "decline_500",
+            48
+          ],
+          [
+            "decline_503",
+            48
+          ],
+          [
+            "taxpayerName",
+            44
+          ],
+          [
+            "movementId",
+            41
+          ],
+          [
+            "white_check_mark",
+            41
+          ],
+          [
+            "payId",
+            39
+          ],
+          [
+            "decline_406",
+            37
+          ],
+          [
+            "decline_408",
+            37
+          ],
+          [
+            "decline_415",
+            37
+          ],
+          [
+            "transferExternalId",
+            36
+          ]
+        ],
+        "code_block_languages": {
+          "plain": 570,
+          "json": 193,
+          "xml": 89,
+          "html": 83,
+          "api": 47,
+          "bash": 46,
+          "http": 37,
+          "curl": 24,
+          "csharp": 11,
+          "text": 9,
+          "properties": 8,
+          "js": 3
+        },
+        "docs_with_georgian_script": 34,
+        "deprecated_docs_count": 19,
+        "deprecated_docs": [
+          {
+            "slug": "installment/authentication",
+            "title": "Authentication",
+            "category": "Online Installment",
+            "source_url": "https://api.bog.ge/docs/en/installment/authentication"
+          },
+          {
+            "slug": "installment/callback",
+            "title": "Callback",
+            "category": "Online Installment",
+            "source_url": "https://api.bog.ge/docs/en/installment/callback"
+          },
+          {
+            "slug": "installment/create-order",
+            "title": "Order Request",
+            "category": "Online Installment",
+            "source_url": "https://api.bog.ge/docs/en/installment/create-order"
+          },
+          {
+            "slug": "installment/dashboard",
+            "title": "Control Panel",
+            "category": "Online Installment",
+            "source_url": "https://api.bog.ge/docs/en/installment/dashboard"
+          },
+          {
+            "slug": "installment/get-discounts",
+            "title": "Installment Loan Calculator",
+            "category": "Online Installment",
+            "source_url": "https://api.bog.ge/docs/en/installment/get-discounts"
+          },
+          {
+            "slug": "installment/installment-details",
+            "title": "Installment Loan Details Receiving",
+            "category": "Online Installment",
+            "source_url": "https://api.bog.ge/docs/en/installment/installment-details"
+          },
+          {
+            "slug": "installment/introduction",
+            "title": "Introduction",
+            "category": "Online Installment",
+            "source_url": "https://api.bog.ge/docs/en/installment/introduction"
+          },
+          {
+            "slug": "installment/modal",
+            "title": "An Online Installment Loan Module",
+            "category": "Online Installment",
+            "source_url": "https://api.bog.ge/docs/en/installment/modal"
+          },
+          {
+            "slug": "installment/plugins",
+            "title": "Plugins and Technical Support",
+            "category": "Online Installment",
+            "source_url": "https://api.bog.ge/docs/en/installment/plugins"
+          },
+          {
+            "slug": "installment/regulation",
+            "title": "Regulations and Limitations",
+            "category": "Online Installment",
+            "source_url": "https://api.bog.ge/docs/en/installment/regulation"
+          },
+          {
+            "slug": "installment/terms-used",
+            "title": "Glossary",
+            "category": "Online Installment",
+            "source_url": "https://api.bog.ge/docs/en/installment/terms-used"
+          },
+          {
+            "slug": "bis-transfers",
+            "title": "BIS - Transfers",
+            "category": "Services",
+            "source_url": "https://developers.tbcbank.ge/docs/bis-transfers"
+          },
+          {
+            "slug": "tbc-id-ciba-flow",
+            "title": "Client-Initiated Backchannel Authentication Flow",
+            "category": "Services",
+            "source_url": "https://developers.tbcbank.ge/docs/tbc-id-ciba-flow"
+          },
+          {
+            "slug": "tbc-id-openid-connect-discovery",
+            "title": "OpenID Connect Discovery",
+            "category": "Services",
+            "source_url": "https://developers.tbcbank.ge/docs/tbc-id-openid-connect-discovery"
+          },
+          {
+            "slug": "bis-import-single-transfer",
+            "title": "Import Single Transfer",
+            "category": "Services > BIS - Transfers",
+            "source_url": "https://developers.tbcbank.ge/docs/bis-import-single-transfer"
+          },
+          {
+            "slug": "bis-test-scenarios-transfers",
+            "title": "Test Scenarios - Transfers",
+            "category": "Test Environment",
+            "source_url": "https://developers.tbcbank.ge/docs/bis-test-scenarios-transfers"
+          },
+          {
+            "slug": "bis-test-environment",
+            "title": "Test Environment",
+            "category": "docs",
+            "source_url": "https://developers.tbcbank.ge/docs/bis-test-environment"
+          },
+          {
+            "slug": "tbc-id-overview",
+            "title": "Overview",
+            "category": "docs",
+            "source_url": "https://developers.tbcbank.ge/docs/tbc-id-overview"
+          },
+          {
+            "slug": "tbc-id-test-environment",
+            "title": "Test Environment",
+            "category": "docs",
+            "source_url": "https://developers.tbcbank.ge/docs/tbc-id-test-environment"
+          }
+        ],
+        "docs_with_security_or_operational_caveats": 71
+      }
+    },
+    "bank_of_georgia": {
+      "provider": "bank_of_georgia",
+      "record_count": 240,
+      "doc_types": {
+        "markdown_doc": 152,
+        "openapi_endpoint": 88
+      },
+      "category_count": 14,
+      "top_categories": [
+        [
+          "Business Internet Banking",
+          44
+        ],
+        [
+          "NextGenPSD2 XS2A Framework",
+          40
+        ],
+        [
+          "Payment Manager",
+          22
+        ],
+        [
+          "Sandbox: payments",
+          22
+        ],
+        [
+          "openFinance API Framework XS2A API as PSD2 Interface Implementation Guidelines - Extended Payment Initiation Service",
+          20
+        ],
+        [
+          "Billing",
+          15
+        ],
+        [
+          "Sandbox: billing",
+          15
+        ],
+        [
+          "Payment Manager: top-ups",
+          12
+        ],
+        [
+          "Online Installment",
+          11
+        ],
+        [
+          "openFinance API Framework XS2A API as PSD2 Interface Implementation Guidelines - Payment Initiation Service",
+          11
+        ],
+        [
+          "Link Payment",
+          9
+        ],
+        [
+          "openFinance API Framework XS2A API as PSD2 Interface Implementation Guidelines - Account Information Service",
+          9
+        ],
+        [
+          "openFinance API Framework Extended Account Information Services",
+          8
+        ],
+        [
+          "Identity Assurance",
+          2
+        ]
+      ],
+      "record_token_stats": {
+        "total_tokens": 159983,
+        "min": 67,
+        "p50": 472.0,
+        "mean": 666.6,
+        "p95": 2059.0,
+        "max": 10716
+      },
+      "heading_section_stats": {
+        "section_count": 910,
+        "min": 4,
+        "p50": 83.0,
+        "mean": 175.5,
+        "p95": 451.0,
+        "max": 10716
+      },
+      "lexical_profile": {
+        "unique_method_paths": 126,
+        "unique_url_paths": 148,
+        "sample_method_paths": [
+          "DELETE /v1/consents/{consentId}",
+          "DELETE /v1/{payment-service}/{payment-product}/{paymentId}",
+          "DELETE /v2/{extended-payment-service4}/{payment-product}/{paymentId}/initiations/{initiationId}",
+          "DELETE /v2/{extended-payment-service6}/{payment-product}/{paymentId}",
+          "DELETE /v2/{payment-service}/{payment-product}/{paymentId}",
+          "DELETE api/documents/bulk/{key}",
+          "DELETE api/documents/{keys}",
+          "GET /banking/products/",
+          "GET /banking/products/business-loans",
+          "GET /banking/products/cred-and-chrg-cards",
+          "GET /banking/products/pers-loans",
+          "GET /banking/products/residential-mortgages",
+          "GET /banking/products/term-deposits",
+          "GET /banking/products/trans-and-savings-accounts",
+          "GET /banking/products/{id}",
+          "GET /banking/products/{locale}",
+          "GET /banking/products/{locale}/business-loans",
+          "GET /banking/products/{locale}/cred-and-chrg-cards",
+          "GET /banking/products/{locale}/pers-loans",
+          "GET /banking/products/{locale}/residential-mortgages",
+          "GET /banking/products/{locale}/term-deposits",
+          "GET /banking/products/{locale}/trans-and-savings-accounts",
+          "GET /v1/accounts",
+          "GET /v1/accounts/{account-id}",
+          "GET /v1/accounts/{account-id}/balances"
+        ],
+        "http_status_code_mentions": {
+          "200": 90,
+          "400": 79,
+          "500": 78,
+          "401": 74,
+          "404": 74,
+          "403": 73,
+          "405": 73,
+          "409": 73,
+          "415": 73,
+          "503": 73,
+          "429": 46,
+          "201": 16,
+          "202": 11,
+          "204": 5
+        },
+        "unique_technical_identifiers": 442,
+        "top_identifiers": [
+          [
+            "documentType",
+            163
+          ],
+          [
+            "resultType",
+            163
+          ],
+          [
+            "order_id",
+            108
+          ],
+          [
+            "purchase_units",
+            100
+          ],
+          [
+            "client_id",
+            68
+          ],
+          [
+            "jwt_token",
+            62
+          ],
+          [
+            "payment_detail",
+            62
+          ],
+          [
+            "access_token",
+            51
+          ],
+          [
+            "openFinance",
+            48
+          ],
+          [
+            "decline_500",
+            48
+          ],
+          [
+            "decline_503",
+            48
+          ],
+          [
+            "paymentId",
+            40
+          ],
+          [
+            "accountNumber",
+            38
+          ],
+          [
+            "decline_406",
+            37
+          ],
+          [
+            "decline_408",
+            37
+          ],
+          [
+            "decline_415",
+            37
+          ],
+          [
+            "client_secret",
+            29
+          ],
+          [
+            "transactionId",
+            27
+          ],
+          [
+            "external_order_id",
+            25
+          ],
+          [
+            "apple_pay",
+            25
+          ],
+          [
+            "action_id",
+            25
+          ],
+          [
+            "client_credentials",
+            24
+          ],
+          [
+            "google_pay",
+            24
+          ],
+          [
+            "parent_order_id",
+            24
+          ],
+          [
+            "secret_key",
+            23
+          ],
+          [
+            "callback_url",
+            21
+          ],
+          [
+            "redirect_urls",
+            20
+          ],
+          [
+            "transfer_method",
+            20
+          ],
+          [
+            "payment_method",
+            19
+          ],
+          [
+            "grant_type",
+            18
+          ]
+        ],
+        "code_block_languages": {
+          "plain": 253,
+          "json": 109,
+          "api": 47,
+          "bash": 46,
+          "xml": 31,
+          "properties": 8,
+          "html": 6,
+          "js": 3,
+          "url": 1
+        },
+        "docs_with_georgian_script": 15,
+        "deprecated_docs_count": 11,
+        "deprecated_docs": [
+          {
+            "slug": "installment/authentication",
+            "title": "Authentication",
+            "category": "Online Installment",
+            "source_url": "https://api.bog.ge/docs/en/installment/authentication"
+          },
+          {
+            "slug": "installment/callback",
+            "title": "Callback",
+            "category": "Online Installment",
+            "source_url": "https://api.bog.ge/docs/en/installment/callback"
+          },
+          {
+            "slug": "installment/create-order",
+            "title": "Order Request",
+            "category": "Online Installment",
+            "source_url": "https://api.bog.ge/docs/en/installment/create-order"
+          },
+          {
+            "slug": "installment/dashboard",
+            "title": "Control Panel",
+            "category": "Online Installment",
+            "source_url": "https://api.bog.ge/docs/en/installment/dashboard"
+          },
+          {
+            "slug": "installment/get-discounts",
+            "title": "Installment Loan Calculator",
+            "category": "Online Installment",
+            "source_url": "https://api.bog.ge/docs/en/installment/get-discounts"
+          },
+          {
+            "slug": "installment/installment-details",
+            "title": "Installment Loan Details Receiving",
+            "category": "Online Installment",
+            "source_url": "https://api.bog.ge/docs/en/installment/installment-details"
+          },
+          {
+            "slug": "installment/introduction",
+            "title": "Introduction",
+            "category": "Online Installment",
+            "source_url": "https://api.bog.ge/docs/en/installment/introduction"
+          },
+          {
+            "slug": "installment/modal",
+            "title": "An Online Installment Loan Module",
+            "category": "Online Installment",
+            "source_url": "https://api.bog.ge/docs/en/installment/modal"
+          },
+          {
+            "slug": "installment/plugins",
+            "title": "Plugins and Technical Support",
+            "category": "Online Installment",
+            "source_url": "https://api.bog.ge/docs/en/installment/plugins"
+          },
+          {
+            "slug": "installment/regulation",
+            "title": "Regulations and Limitations",
+            "category": "Online Installment",
+            "source_url": "https://api.bog.ge/docs/en/installment/regulation"
+          },
+          {
+            "slug": "installment/terms-used",
+            "title": "Glossary",
+            "category": "Online Installment",
+            "source_url": "https://api.bog.ge/docs/en/installment/terms-used"
+          }
+        ],
+        "docs_with_security_or_operational_caveats": 53
+      }
+    },
+    "tbc_bank": {
+      "provider": "tbc_bank",
+      "record_count": 233,
+      "doc_types": {
+        "guide_doc": 129,
+        "openapi_endpoint": 95,
+        "reference_doc": 9
+      },
+      "category_count": 42,
+      "top_categories": [
+        [
+          "docs",
+          43
+        ],
+        [
+          "API",
+          29
+        ],
+        [
+          "Payments",
+          17
+        ],
+        [
+          "Services",
+          14
+        ],
+        [
+          "4xx class errors",
+          9
+        ],
+        [
+          "reference",
+          9
+        ],
+        [
+          "Consents",
+          7
+        ],
+        [
+          "ExtendedPaymentsInitiations",
+          7
+        ],
+        [
+          "OAuth",
+          6
+        ],
+        [
+          "Payment",
+          6
+        ],
+        [
+          "Obtaining Merchant Credentials",
+          5
+        ],
+        [
+          "Plug-ins",
+          5
+        ],
+        [
+          "Services > BIS - Transfers",
+          5
+        ],
+        [
+          "Testing",
+          5
+        ],
+        [
+          "Applications",
+          5
+        ]
+      ],
+      "record_token_stats": {
+        "total_tokens": 213076,
+        "min": 25,
+        "p50": 418.0,
+        "mean": 914.5,
+        "p95": 2305.0,
+        "max": 54695
+      },
+      "heading_section_stats": {
+        "section_count": 1137,
+        "min": 4,
+        "p50": 73.0,
+        "mean": 186.4,
+        "p95": 746.0,
+        "max": 2546
+      },
+      "lexical_profile": {
+        "unique_method_paths": 118,
+        "unique_url_paths": 158,
+        "sample_method_paths": [
+          "DELETE /v1/consents/{consentId}",
+          "DELETE /v1/{payment-service}/{payment-product}/{paymentId}",
+          "DELETE /v2/secured-payments/{payment-product}/{paymentId}",
+          "DELETE /v2/{extended-payment-service}/{payment-product}/{paymentId}",
+          "DELETE /v2/{extended-payment-service}/{payment-product}/{paymentId}/initiations/{initiationId}",
+          "GET /.well-known/oauth-authorization-server",
+          "GET /.well-known/openid-configuration",
+          "GET /bab/v1/accounts/GE48TB7873440574631292/balances/EUR",
+          "GET /bab/v1/accounts/GE48TB7873440574631292/balances/GEL",
+          "GET /bab/v1/accounts/GE48TB7873440574631292/balances/USD",
+          "GET /bab/v1/accounts/movements",
+          "GET /bab/v1/accounts/movements/018383341565.1",
+          "GET /bab/v1/accounts/movements/018716808825.1",
+          "GET /bab/v1/accounts/movements/018716808825.2",
+          "GET /bab/v1/accounts/movements/{id}",
+          "GET /bab/v1/accounts/statements",
+          "GET /bab/v1/accounts/{iban}/balances/{currency}",
+          "GET /bab/v1/transfers/batch/12345",
+          "GET /bab/v1/transfers/batch/184729/status",
+          "GET /bab/v1/transfers/batch/3364/status",
+          "GET /bab/v1/transfers/batch/BATCH-2026-0001",
+          "GET /bab/v1/transfers/batch/{batchId}/status",
+          "GET /bab/v1/transfers/batch/{batchTransferExternalId}",
+          "GET /bab/v1/transfers/batch/{batchTransferId}/status",
+          "GET /bab/v1/transfers/single/11001"
+        ],
+        "http_status_code_mentions": {
+          "400": 159,
+          "200": 138,
+          "500": 96,
+          "401": 93,
+          "404": 41,
+          "201": 28,
+          "403": 22,
+          "405": 6,
+          "409": 3,
+          "415": 2,
+          "429": 2,
+          "503": 2,
+          "204": 2,
+          "504": 2,
+          "202": 2,
+          "422": 1
+        },
+        "unique_technical_identifiers": 361,
+        "top_identifiers": [
+          [
+            "accountNumber",
+            143
+          ],
+          [
+            "documentNumber",
+            101
+          ],
+          [
+            "paymentId",
+            97
+          ],
+          [
+            "accountCurrencyCode",
+            93
+          ],
+          [
+            "viewBox",
+            72
+          ],
+          [
+            "creditAccount",
+            67
+          ],
+          [
+            "additionalDescription",
+            64
+          ],
+          [
+            "debitAccount",
+            59
+          ],
+          [
+            "tbcButton",
+            49
+          ],
+          [
+            "tbcLogo",
+            49
+          ],
+          [
+            "taxpayerName",
+            44
+          ],
+          [
+            "client_id",
+            41
+          ],
+          [
+            "movementId",
+            41
+          ],
+          [
+            "white_check_mark",
+            41
+          ],
+          [
+            "payId",
+            39
+          ],
+          [
+            "transferExternalId",
+            36
+          ],
+          [
+            "beneficiaryName",
+            36
+          ],
+          [
+            "sessionId",
+            35
+          ],
+          [
+            "statusCode",
+            33
+          ],
+          [
+            "externalPaymentId",
+            32
+          ],
+          [
+            "accountName",
+            32
+          ],
+          [
+            "additionalInformation",
+            32
+          ],
+          [
+            "documentDate",
+            32
+          ],
+          [
+            "taxpayerCode",
+            32
+          ],
+          [
+            "parentExternalPaymentId",
+            32
+          ],
+          [
+            "transactionType",
+            32
+          ],
+          [
+            "transferId",
+            32
+          ],
+          [
+            "paymentOrder",
+            30
+          ],
+          [
+            "recId",
+            30
+          ],
+          [
+            "treasuryCode",
+            30
+          ]
+        ],
+        "code_block_languages": {
+          "plain": 317,
+          "json": 84,
+          "html": 77,
+          "xml": 58,
+          "http": 37,
+          "curl": 24,
+          "csharp": 11,
+          "text": 9,
+          "css": 2,
+          "javascript": 1
+        },
+        "docs_with_georgian_script": 19,
+        "deprecated_docs_count": 8,
+        "deprecated_docs": [
+          {
+            "slug": "bis-transfers",
+            "title": "BIS - Transfers",
+            "category": "Services",
+            "source_url": "https://developers.tbcbank.ge/docs/bis-transfers"
+          },
+          {
+            "slug": "tbc-id-ciba-flow",
+            "title": "Client-Initiated Backchannel Authentication Flow",
+            "category": "Services",
+            "source_url": "https://developers.tbcbank.ge/docs/tbc-id-ciba-flow"
+          },
+          {
+            "slug": "tbc-id-openid-connect-discovery",
+            "title": "OpenID Connect Discovery",
+            "category": "Services",
+            "source_url": "https://developers.tbcbank.ge/docs/tbc-id-openid-connect-discovery"
+          },
+          {
+            "slug": "bis-import-single-transfer",
+            "title": "Import Single Transfer",
+            "category": "Services > BIS - Transfers",
+            "source_url": "https://developers.tbcbank.ge/docs/bis-import-single-transfer"
+          },
+          {
+            "slug": "bis-test-scenarios-transfers",
+            "title": "Test Scenarios - Transfers",
+            "category": "Test Environment",
+            "source_url": "https://developers.tbcbank.ge/docs/bis-test-scenarios-transfers"
+          },
+          {
+            "slug": "bis-test-environment",
+            "title": "Test Environment",
+            "category": "docs",
+            "source_url": "https://developers.tbcbank.ge/docs/bis-test-environment"
+          },
+          {
+            "slug": "tbc-id-overview",
+            "title": "Overview",
+            "category": "docs",
+            "source_url": "https://developers.tbcbank.ge/docs/tbc-id-overview"
+          },
+          {
+            "slug": "tbc-id-test-environment",
+            "title": "Test Environment",
+            "category": "docs",
+            "source_url": "https://developers.tbcbank.ge/docs/tbc-id-test-environment"
+          }
+        ],
+        "docs_with_security_or_operational_caveats": 18
+      }
+    },
+    "cross_bank_homonym_collisions": {
+      "shared_url_paths_count": 15,
+      "shared_url_paths_sample": [
+        "/v1/accounts",
+        "/v1/accounts/{account-id}",
+        "/v1/accounts/{account-id}/balances",
+        "/v1/accounts/{account-id}/transactions",
+        "/v1/consents",
+        "/v1/consents/{consentId}",
+        "/v1/consents/{consentId}/authorisations",
+        "/v1/consents/{consentId}/authorisations/{authorisationId}",
+        "/v1/consents/{consentId}/status",
+        "/v1/{payment-service}/{payment-product}/{paymentId}",
+        "/v1/{payment-service}/{payment-product}/{paymentId}/authorisations",
+        "/v1/{payment-service}/{payment-product}/{paymentId}/authorisations/{authorisationId}",
+        "/v1/{payment-service}/{payment-product}/{paymentId}/cancellation-authorisations",
+        "/v1/{payment-service}/{payment-product}/{paymentId}/cancellation-authorisations/{authorisationId}",
+        "/v2/secured-payments/{payment-product}"
+      ],
+      "shared_technical_identifiers_count": 49,
+      "shared_technical_identifiers_sample": [
+        "access_token",
+        "accountNumber",
+        "authorisationId",
+        "authorization_code",
+        "authorization_endpoint",
+        "bankCode",
+        "bankName",
+        "birthDate",
+        "bookingStatus",
+        "client_credentials",
+        "client_id",
+        "client_secret",
+        "code_challenge",
+        "code_challenge_method",
+        "code_verifier",
+        "consentId",
+        "creditSum",
+        "dateFrom",
+        "dateTo",
+        "debitSum",
+        "expires_in",
+        "family_name",
+        "ge_aml",
+        "given_name",
+        "grant_type",
+        "initiationId",
+        "mTLS",
+        "paymentId",
+        "paymentMethod",
+        "personalNumber",
+        "personal_number",
+        "querySelector",
+        "redirectUrl",
+        "redirect_uri",
+        "response_type",
+        "startAuthorisation",
+        "startAuthorisationWithAuthentciationMethodSelection",
+        "startAuthorisationWithEncryptedPsuAuthentication",
+        "startAuthorisationWithPsuAuthentication",
+        "startAuthorisationWithPsuIdentfication"
+      ]
+    }
+  },
+  "diagnostic_findings": {
+    "ai_readiness_comparison": {
+      "bank_of_georgia": {
+        "has_llms_txt": true,
+        "has_llms_full_txt": true,
+        "has_claude_skill_md": true,
+        "has_raw_md_endpoints": true,
+        "has_mcp_server": false,
+        "openapi_coverage_gap": "5 OpenAPI specs cover Open Banking ONLY (88 endpoints); 152 commercial API pages across 9 products (Payment Manager, Business Internet Banking, Billing, Installments, Link Payment) have NO OpenAPI spec in llms.txt.",
+        "auth_header_contradictions_count": 26,
+        "auth_header_contradictions": [
+          {
+            "slug": "payments/standard-process/create-order",
+            "title": "Order Request",
+            "source_url": "https://api.bog.ge/docs/en/payments/standard-process/create-order",
+            "issue": "Doc states `Authorization — Basic <base64>, required` on line 1 and immediately contradicts itself saying `Bearer <jwt_token>` is transmitted (and curl uses `Authorization: Bearer <token>`)."
+          },
+          {
+            "slug": "payments/standard-process/get-payment-details",
+            "title": "Payment Details",
+            "source_url": "https://api.bog.ge/docs/en/payments/standard-process/get-payment-details",
+            "issue": "Doc states `Authorization — Basic <base64>, required` on line 1 and immediately contradicts itself saying `Bearer <jwt_token>` is transmitted (and curl uses `Authorization: Bearer <token>`)."
+          },
+          {
+            "slug": "payments/saved-card/recurrent",
+            "title": "Save Card for Recurring Payments",
+            "source_url": "https://api.bog.ge/docs/en/payments/saved-card/recurrent",
+            "issue": "Doc states `Authorization — Basic <base64>, required` on line 1 and immediately contradicts itself saying `Bearer <jwt_token>` is transmitted (and curl uses `Authorization: Bearer <token>`)."
+          },
+          {
+            "slug": "payments/saved-card/offline",
+            "title": "Save Card for Automatic Payments",
+            "source_url": "https://api.bog.ge/docs/en/payments/saved-card/offline",
+            "issue": "Doc states `Authorization — Basic <base64>, required` on line 1 and immediately contradicts itself saying `Bearer <jwt_token>` is transmitted (and curl uses `Authorization: Bearer <token>`)."
+          },
+          {
+            "slug": "payments/saved-card/delete",
+            "title": "Delete Saved Card",
+            "source_url": "https://api.bog.ge/docs/en/payments/saved-card/delete",
+            "issue": "Doc states `Authorization — Basic <base64>, required` on line 1 and immediately contradicts itself saying `Bearer <jwt_token>` is transmitted (and curl uses `Authorization: Bearer <token>`)."
+          },
+          {
+            "slug": "payments/saved-card/offline-payment",
+            "title": "Automatic Payment by the Saved Card",
+            "source_url": "https://api.bog.ge/docs/en/payments/saved-card/offline-payment",
+            "issue": "Doc states `Authorization — Basic <base64>, required` on line 1 and immediately contradicts itself saying `Bearer <jwt_token>` is transmitted (and curl uses `Authorization: Bearer <token>`)."
+          },
+          {
+            "slug": "payments/preauthorization/approve",
+            "title": "Confirm Pre-Authorization",
+            "source_url": "https://api.bog.ge/docs/en/payments/preauthorization/approve",
+            "issue": "Doc states `Authorization — Basic <base64>, required` on line 1 and immediately contradicts itself saying `Bearer <jwt_token>` is transmitted (and curl uses `Authorization: Bearer <token>`)."
+          },
+          {
+            "slug": "payments/preauthorization/reject",
+            "title": "Reject Pre-Authorization",
+            "source_url": "https://api.bog.ge/docs/en/payments/preauthorization/reject",
+            "issue": "Doc states `Authorization — Basic <base64>, required` on line 1 and immediately contradicts itself saying `Bearer <jwt_token>` is transmitted (and curl uses `Authorization: Bearer <token>`)."
+          },
+          {
+            "slug": "payments/external-orders/complete-external-applepay",
+            "title": "Apple Pay™ Accept Payment",
+            "source_url": "https://api.bog.ge/docs/en/payments/external-orders/complete-external-applepay",
+            "issue": "Doc states `Authorization — Basic <base64>, required` on line 1 and immediately contradicts itself saying `Bearer <jwt_token>` is transmitted (and curl uses `Authorization: Bearer <token>`)."
+          },
+          {
+            "slug": "payments/refund",
+            "title": "Refund",
+            "source_url": "https://api.bog.ge/docs/en/payments/refund",
+            "issue": "Doc states `Authorization — Basic <base64>, required` on line 1 and immediately contradicts itself saying `Bearer <jwt_token>` is transmitted (and curl uses `Authorization: Bearer <token>`)."
+          },
+          {
+            "slug": "payments-addons/standard-process/create-top-up-order",
+            "title": "Top-Up",
+            "source_url": "https://api.bog.ge/docs/en/payments-addons/standard-process/create-top-up-order",
+            "issue": "Doc states `Authorization — Basic <base64>, required` on line 1 and immediately contradicts itself saying `Bearer <jwt_token>` is transmitted (and curl uses `Authorization: Bearer <token>`)."
+          },
+          {
+            "slug": "payments-addons/standard-process/delete",
+            "title": "Delete Saved Card",
+            "source_url": "https://api.bog.ge/docs/en/payments-addons/standard-process/delete",
+            "issue": "Doc states `Authorization — Basic <base64>, required` on line 1 and immediately contradicts itself saying `Bearer <jwt_token>` is transmitted (and curl uses `Authorization: Bearer <token>`)."
+          },
+          {
+            "slug": "payments-addons/standard-process/original-credit-transaction",
+            "title": "Payout",
+            "source_url": "https://api.bog.ge/docs/en/payments-addons/standard-process/original-credit-transaction",
+            "issue": "Doc states `Authorization — Basic <base64>, required` on line 1 and immediately contradicts itself saying `Bearer <jwt_token>` is transmitted (and curl uses `Authorization: Bearer <token>`)."
+          },
+          {
+            "slug": "payments-addons/standard-process/refund",
+            "title": "Refund",
+            "source_url": "https://api.bog.ge/docs/en/payments-addons/standard-process/refund",
+            "issue": "Doc states `Authorization — Basic <base64>, required` on line 1 and immediately contradicts itself saying `Bearer <jwt_token>` is transmitted (and curl uses `Authorization: Bearer <token>`)."
+          },
+          {
+            "slug": "payments-addons/standard-process/get-payment-details",
+            "title": "Payment Details",
+            "source_url": "https://api.bog.ge/docs/en/payments-addons/standard-process/get-payment-details",
+            "issue": "Doc states `Authorization — Basic <base64>, required` on line 1 and immediately contradicts itself saying `Bearer <jwt_token>` is transmitted (and curl uses `Authorization: Bearer <token>`)."
+          },
+          {
+            "slug": "payments-addons/external-orders/complete-external-applepay",
+            "title": "Apple Pay™ Accept Payment",
+            "source_url": "https://api.bog.ge/docs/en/payments-addons/external-orders/complete-external-applepay",
+            "issue": "Doc states `Authorization — Basic <base64>, required` on line 1 and immediately contradicts itself saying `Bearer <jwt_token>` is transmitted (and curl uses `Authorization: Bearer <token>`)."
+          },
+          {
+            "slug": "sandbox/payments/standard-process/create-order",
+            "title": "Order Request",
+            "source_url": "https://api.bog.ge/docs/en/sandbox/payments/standard-process/create-order",
+            "issue": "Doc states `Authorization — Basic <base64>, required` on line 1 and immediately contradicts itself saying `Bearer <jwt_token>` is transmitted (and curl uses `Authorization: Bearer <token>`)."
+          },
+          {
+            "slug": "sandbox/payments/standard-process/get-payment-details",
+            "title": "Payment Details",
+            "source_url": "https://api.bog.ge/docs/en/sandbox/payments/standard-process/get-payment-details",
+            "issue": "Doc states `Authorization — Basic <base64>, required` on line 1 and immediately contradicts itself saying `Bearer <jwt_token>` is transmitted (and curl uses `Authorization: Bearer <token>`)."
+          },
+          {
+            "slug": "sandbox/payments/saved-card/recurrent",
+            "title": "Save Card for Recurring Payments",
+            "source_url": "https://api.bog.ge/docs/en/sandbox/payments/saved-card/recurrent",
+            "issue": "Doc states `Authorization — Basic <base64>, required` on line 1 and immediately contradicts itself saying `Bearer <jwt_token>` is transmitted (and curl uses `Authorization: Bearer <token>`)."
+          },
+          {
+            "slug": "sandbox/payments/saved-card/offline",
+            "title": "Save Card for Automatic Payments",
+            "source_url": "https://api.bog.ge/docs/en/sandbox/payments/saved-card/offline",
+            "issue": "Doc states `Authorization — Basic <base64>, required` on line 1 and immediately contradicts itself saying `Bearer <jwt_token>` is transmitted (and curl uses `Authorization: Bearer <token>`)."
+          },
+          {
+            "slug": "sandbox/payments/saved-card/delete",
+            "title": "Delete Saved Card",
+            "source_url": "https://api.bog.ge/docs/en/sandbox/payments/saved-card/delete",
+            "issue": "Doc states `Authorization — Basic <base64>, required` on line 1 and immediately contradicts itself saying `Bearer <jwt_token>` is transmitted (and curl uses `Authorization: Bearer <token>`)."
+          },
+          {
+            "slug": "sandbox/payments/saved-card/offline-payment",
+            "title": "Automatic Payment by the Saved Card",
+            "source_url": "https://api.bog.ge/docs/en/sandbox/payments/saved-card/offline-payment",
+            "issue": "Doc states `Authorization — Basic <base64>, required` on line 1 and immediately contradicts itself saying `Bearer <jwt_token>` is transmitted (and curl uses `Authorization: Bearer <token>`)."
+          },
+          {
+            "slug": "sandbox/payments/preauthorization/approve",
+            "title": "Confirm Pre-Authorization",
+            "source_url": "https://api.bog.ge/docs/en/sandbox/payments/preauthorization/approve",
+            "issue": "Doc states `Authorization — Basic <base64>, required` on line 1 and immediately contradicts itself saying `Bearer <jwt_token>` is transmitted (and curl uses `Authorization: Bearer <token>`)."
+          },
+          {
+            "slug": "sandbox/payments/preauthorization/reject",
+            "title": "Reject Pre-Authorization",
+            "source_url": "https://api.bog.ge/docs/en/sandbox/payments/preauthorization/reject",
+            "issue": "Doc states `Authorization — Basic <base64>, required` on line 1 and immediately contradicts itself saying `Bearer <jwt_token>` is transmitted (and curl uses `Authorization: Bearer <token>`)."
+          },
+          {
+            "slug": "sandbox/payments/external-orders/complete-external-applepay",
+            "title": "Apple Pay™ Accept Payment",
+            "source_url": "https://api.bog.ge/docs/en/sandbox/payments/external-orders/complete-external-applepay",
+            "issue": "Doc states `Authorization — Basic <base64>, required` on line 1 and immediately contradicts itself saying `Bearer <jwt_token>` is transmitted (and curl uses `Authorization: Bearer <token>`)."
+          },
+          {
+            "slug": "sandbox/payments/refund",
+            "title": "Refund",
+            "source_url": "https://api.bog.ge/docs/en/sandbox/payments/refund",
+            "issue": "Doc states `Authorization — Basic <base64>, required` on line 1 and immediately contradicts itself saying `Bearer <jwt_token>` is transmitted (and curl uses `Authorization: Bearer <token>`)."
+          }
+        ],
+        "deprecated_pages_in_llms_txt": 11,
+        "deprecated_pages_sample": [
+          {
+            "slug": "installment/authentication",
+            "title": "Authentication",
+            "source_url": "https://api.bog.ge/docs/en/installment/authentication"
+          },
+          {
+            "slug": "installment/callback",
+            "title": "Callback",
+            "source_url": "https://api.bog.ge/docs/en/installment/callback"
+          },
+          {
+            "slug": "installment/create-order",
+            "title": "Order Request",
+            "source_url": "https://api.bog.ge/docs/en/installment/create-order"
+          },
+          {
+            "slug": "installment/dashboard",
+            "title": "Control Panel",
+            "source_url": "https://api.bog.ge/docs/en/installment/dashboard"
+          },
+          {
+            "slug": "installment/get-discounts",
+            "title": "Installment Loan Calculator",
+            "source_url": "https://api.bog.ge/docs/en/installment/get-discounts"
+          },
+          {
+            "slug": "installment/installment-details",
+            "title": "Installment Loan Details Receiving",
+            "source_url": "https://api.bog.ge/docs/en/installment/installment-details"
+          },
+          {
+            "slug": "installment/introduction",
+            "title": "Introduction",
+            "source_url": "https://api.bog.ge/docs/en/installment/introduction"
+          },
+          {
+            "slug": "installment/modal",
+            "title": "An Online Installment Loan Module",
+            "source_url": "https://api.bog.ge/docs/en/installment/modal"
+          },
+          {
+            "slug": "installment/plugins",
+            "title": "Plugins and Technical Support",
+            "source_url": "https://api.bog.ge/docs/en/installment/plugins"
+          },
+          {
+            "slug": "installment/regulation",
+            "title": "Regulations and Limitations",
+            "source_url": "https://api.bog.ge/docs/en/installment/regulation"
+          }
+        ]
+      },
+      "tbc_bank": {
+        "has_llms_txt": false,
+        "has_llms_full_txt": false,
+        "has_claude_skill_md": false,
+        "has_raw_md_endpoints": false,
+        "has_mcp_server": false,
+        "portal_duplicate_redirect_traps": 50,
+        "openapi_endpoints_total": 95,
+        "openapi_endpoints_missing_4xx_schema": 12,
+        "openapi_endpoints_missing_4xx_sample": [
+          {
+            "slug": "tbc-id-authorize",
+            "endpoint": "GET /psd2/openbanking/oauth/authorize",
+            "category": "Authorization Code Flow",
+            "source_url": "https://developers.tbcbank.ge/reference/tbc-id-authorize"
+          },
+          {
+            "slug": "tbc-id-bc-authorization",
+            "endpoint": "POST /psd2/openbanking/oauth/bc-authorization",
+            "category": "CIBA Flow",
+            "source_url": "https://developers.tbcbank.ge/reference/tbc-id-bc-authorization"
+          },
+          {
+            "slug": "aisoauthauhtorization",
+            "endpoint": "GET /psd2/openbanking/oauth/authorize",
+            "category": "OAuth",
+            "source_url": "https://developers.tbcbank.ge/reference/aisoauthauhtorization"
+          },
+          {
+            "slug": "aisopenidconfiguration",
+            "endpoint": "GET /.well-known/oauth-authorization-server",
+            "category": "OAuth",
+            "source_url": "https://developers.tbcbank.ge/reference/aisopenidconfiguration"
+          },
+          {
+            "slug": "get_openbanking-oauth-well-known-oauth-authorization-server",
+            "endpoint": "GET /openbanking/oauth/.well-known/oauth-authorization-server",
+            "category": "OAuth",
+            "source_url": "https://developers.tbcbank.ge/reference/get_openbanking-oauth-well-known-oauth-authorization-server"
+          },
+          {
+            "slug": "get_psd2-openbanking-oauth-authorize",
+            "endpoint": "GET /psd2/openbanking/oauth/authorize",
+            "category": "OAuth",
+            "source_url": "https://developers.tbcbank.ge/reference/get_psd2-openbanking-oauth-authorize"
+          },
+          {
+            "slug": "tbc-id-openid-configuration",
+            "endpoint": "GET /.well-known/openid-configuration",
+            "category": "OpenID Connect Discovery",
+            "source_url": "https://developers.tbcbank.ge/reference/tbc-id-openid-configuration"
+          },
+          {
+            "slug": "post_v1-tpay-payments",
+            "endpoint": "POST /v1/tpay/payments",
+            "category": "Payment",
+            "source_url": "https://developers.tbcbank.ge/reference/post_v1-tpay-payments"
+          },
+          {
+            "slug": "get_v1-payment-service-payment-product-paymentid-cancellation-authorisations",
+            "endpoint": "GET /v1/{payment-service}/{payment-product}/{paymentId}/cancellation-authorisations",
+            "category": "Payments",
+            "source_url": "https://developers.tbcbank.ge/reference/get_v1-payment-service-payment-product-paymentid-cancellation-authorisations"
+          },
+          {
+            "slug": "get_v1-payment-service-payment-product-paymentid-cancellation-authorisations-authorisationid",
+            "endpoint": "GET /v1/{payment-service}/{payment-product}/{paymentId}/cancellation-authorisations/{authorisationId}",
+            "category": "Payments",
+            "source_url": "https://developers.tbcbank.ge/reference/get_v1-payment-service-payment-product-paymentid-cancellation-authorisations-authorisationid"
+          },
+          {
+            "slug": "post_v1-payment-service-payment-product-paymentid-authorisations",
+            "endpoint": "POST /v1/{payment-service}/{payment-product}/{paymentId}/authorisations",
+            "category": "Payments",
+            "source_url": "https://developers.tbcbank.ge/reference/post_v1-payment-service-payment-product-paymentid-authorisations"
+          },
+          {
+            "slug": "post_v1-payment-service-payment-product-paymentid-cancellation-authorisations",
+            "endpoint": "POST /v1/{payment-service}/{payment-product}/{paymentId}/cancellation-authorisations",
+            "category": "Payments",
+            "source_url": "https://developers.tbcbank.ge/reference/post_v1-payment-service-payment-product-paymentid-cancellation-authorisations"
+          }
+        ],
+        "openapi_endpoints_missing_operation_id": 44,
+        "guide_endpoints_not_in_reference_schema": 0,
+        "guide_endpoints_not_in_reference_sample": [],
+        "callback_docs_total": 12,
+        "callback_docs_mentioning_signature_verification": 6
+      }
+    },
+    "bog_openapi_spec_audits": [
+      {
+        "spec_file": "BG_oFA_AIS_recent.openapi.yaml",
+        "title": "openFinance API Framework XS2A API as PSD2 Interface Implementation Guidelines - Account Information Service",
+        "version": "2.3",
+        "total_operations": 9,
+        "operations_missing_4xx_error_responses": 0,
+        "sample_missing_4xx": [],
+        "operations_missing_operationId": 0
+      },
+      {
+        "spec_file": "BG_oFA_PIS_recent.openapi.yaml",
+        "title": "openFinance API Framework XS2A API as PSD2 Interface Implementation Guidelines - Payment Initiation Service",
+        "version": "2.3",
+        "total_operations": 11,
+        "operations_missing_4xx_error_responses": 0,
+        "sample_missing_4xx": [],
+        "operations_missing_operationId": 0
+      },
+      {
+        "spec_file": "BG_oFA_XAIS_recent.openapi.yaml",
+        "title": "openFinance API Framework Extended Account Information Services",
+        "version": "2.2",
+        "total_operations": 8,
+        "operations_missing_4xx_error_responses": 0,
+        "sample_missing_4xx": [],
+        "operations_missing_operationId": 0
+      },
+      {
+        "spec_file": "BG_oFA_XPIS_recent.openapi.yaml",
+        "title": "openFinance API Framework XS2A API as PSD2 Interface Implementation Guidelines - Extended Payment Initiation Service",
+        "version": "2.1",
+        "total_operations": 20,
+        "operations_missing_4xx_error_responses": 0,
+        "sample_missing_4xx": [],
+        "operations_missing_operationId": 0
+      },
+      {
+        "spec_file": "openbanking.yaml",
+        "title": "NextGenPSD2 XS2A Framework",
+        "version": "0.8",
+        "total_operations": 40,
+        "operations_missing_4xx_error_responses": 15,
+        "sample_missing_4xx": [
+          "GET /banking/products/{locale}",
+          "GET /banking/products/{locale}/trans-and-savings-accounts",
+          "GET /banking/products/{locale}/term-deposits",
+          "GET /banking/products/{locale}/residential-mortgages",
+          "GET /banking/products/{locale}/pers-loans",
+          "GET /banking/products/{locale}/cred-and-chrg-cards",
+          "GET /banking/products/{locale}/business-loans",
+          "GET /banking/products/{id}"
+        ],
+        "operations_missing_operationId": 0
+      }
+    ]
+  }
+}
