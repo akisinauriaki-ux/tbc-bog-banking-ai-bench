@@ -1,0 +1,667 @@
+{
+  "alpha_sweep_curve_dev": {
+    "0.00": 0.6589,
+    "0.05": 0.6727,
+    "0.10": 0.6789,
+    "0.15": 0.6845,
+    "0.20": 0.6862,
+    "0.25": 0.6957,
+    "0.30": 0.7034,
+    "0.35": 0.7064,
+    "0.40": 0.7088,
+    "0.45": 0.7196,
+    "0.50": 0.7181,
+    "0.55": 0.7218,
+    "0.60": 0.7358,
+    "0.65": 0.7436,
+    "0.70": 0.7449,
+    "0.75": 0.7537,
+    "0.80": 0.7417,
+    "0.85": 0.7344,
+    "0.90": 0.7118,
+    "0.95": 0.7079,
+    "1.00": 0.6927
+  },
+  "dev_leaderboard": {
+    "A0_LlmsTxtRouter": {
+      "in_domain_ndcg_10": 0.5379,
+      "in_domain_mrr_10": 0.5982,
+      "in_domain_recall_10": 0.7625,
+      "debate_2side_recall_5": 0.75,
+      "class_ndcg_10": {
+        "SYM": 0.543,
+        "SYMP": 0.5469,
+        "ERR": 0.4872,
+        "CTX": 0.6323,
+        "DEB": 0.4804
+      },
+      "scope_violations": 2,
+      "false_abstentions": 0,
+      "ood_abstained_count": 0,
+      "ood_total": 6,
+      "ood_abstention_rate": 0.0,
+      "warm_p50_ms": 0.44,
+      "warm_p95_ms": 0.69,
+      "warm_p99_ms": 0.871
+    },
+    "A_FlatBM25": {
+      "in_domain_ndcg_10": 0.5433,
+      "in_domain_mrr_10": 0.575,
+      "in_domain_recall_10": 0.7125,
+      "debate_2side_recall_5": 0.6667,
+      "class_ndcg_10": {
+        "SYM": 0.8645,
+        "SYMP": 0.4037,
+        "ERR": 0.5314,
+        "CTX": 0.4145,
+        "DEB": 0.5025
+      },
+      "scope_violations": 3,
+      "false_abstentions": 0,
+      "ood_abstained_count": 0,
+      "ood_total": 6,
+      "ood_abstention_rate": 0.0,
+      "warm_p50_ms": 2.253,
+      "warm_p95_ms": 4.592,
+      "warm_p99_ms": 5.872
+    },
+    "B1_Dense_MiniLM_Raw": {
+      "in_domain_ndcg_10": 0.5335,
+      "in_domain_mrr_10": 0.65,
+      "in_domain_recall_10": 0.7,
+      "debate_2side_recall_5": 0.6667,
+      "class_ndcg_10": {
+        "SYM": 0.7401,
+        "SYMP": 0.4608,
+        "ERR": 0.4956,
+        "CTX": 0.4512,
+        "DEB": 0.5196
+      },
+      "scope_violations": 2,
+      "false_abstentions": 0,
+      "ood_abstained_count": 0,
+      "ood_total": 6,
+      "ood_abstention_rate": 0.0,
+      "warm_p50_ms": 0.294,
+      "warm_p95_ms": 0.419,
+      "warm_p99_ms": 0.544
+    },
+    "B2_Dense_MiniLM_Ctx": {
+      "in_domain_ndcg_10": 0.6215,
+      "in_domain_mrr_10": 0.6717,
+      "in_domain_recall_10": 0.8111,
+      "debate_2side_recall_5": 0.8333,
+      "class_ndcg_10": {
+        "SYM": 0.6823,
+        "SYMP": 0.5009,
+        "ERR": 0.6037,
+        "CTX": 0.6471,
+        "DEB": 0.6733
+      },
+      "scope_violations": 1,
+      "false_abstentions": 0,
+      "ood_abstained_count": 0,
+      "ood_total": 6,
+      "ood_abstention_rate": 0.0,
+      "warm_p50_ms": 0.254,
+      "warm_p95_ms": 0.37,
+      "warm_p99_ms": 0.396
+    },
+    "B3_Dense_BGE_Ctx": {
+      "in_domain_ndcg_10": 0.6742,
+      "in_domain_mrr_10": 0.7694,
+      "in_domain_recall_10": 0.8708,
+      "debate_2side_recall_5": 0.9167,
+      "class_ndcg_10": {
+        "SYM": 0.725,
+        "SYMP": 0.694,
+        "ERR": 0.5565,
+        "CTX": 0.6349,
+        "DEB": 0.7604
+      },
+      "scope_violations": 1,
+      "false_abstentions": 0,
+      "ood_abstained_count": 0,
+      "ood_total": 6,
+      "ood_abstention_rate": 0.0,
+      "warm_p50_ms": 0.254,
+      "warm_p95_ms": 0.368,
+      "warm_p99_ms": 0.487
+    },
+    "C_Hybrid_RRF": {
+      "in_domain_ndcg_10": 0.6742,
+      "in_domain_mrr_10": 0.73,
+      "in_domain_recall_10": 0.8778,
+      "debate_2side_recall_5": 0.9167,
+      "class_ndcg_10": {
+        "SYM": 0.8546,
+        "SYMP": 0.6268,
+        "ERR": 0.5506,
+        "CTX": 0.5855,
+        "DEB": 0.7532
+      },
+      "scope_violations": 2,
+      "false_abstentions": 0,
+      "ood_abstained_count": 0,
+      "ood_total": 6,
+      "ood_abstention_rate": 0.0,
+      "warm_p50_ms": 2.522,
+      "warm_p95_ms": 5.036,
+      "warm_p99_ms": 7.316
+    },
+    "D_SaStyle_TM2C2": {
+      "in_domain_ndcg_10": 0.7414,
+      "in_domain_mrr_10": 0.7881,
+      "in_domain_recall_10": 0.9417,
+      "debate_2side_recall_5": 0.9167,
+      "class_ndcg_10": {
+        "SYM": 0.8743,
+        "SYMP": 0.7436,
+        "ERR": 0.5936,
+        "CTX": 0.6864,
+        "DEB": 0.8093
+      },
+      "scope_violations": 1,
+      "false_abstentions": 0,
+      "ood_abstained_count": 5,
+      "ood_total": 6,
+      "ood_abstention_rate": 0.8333,
+      "warm_p50_ms": 1.141,
+      "warm_p95_ms": 2.274,
+      "warm_p99_ms": 2.742
+    },
+    "E_BankingNative_3Lane": {
+      "in_domain_ndcg_10": 0.7537,
+      "in_domain_mrr_10": 0.827,
+      "in_domain_recall_10": 0.9389,
+      "debate_2side_recall_5": 0.9167,
+      "class_ndcg_10": {
+        "SYM": 0.8261,
+        "SYMP": 0.7679,
+        "ERR": 0.624,
+        "CTX": 0.7393,
+        "DEB": 0.8112
+      },
+      "scope_violations": 0,
+      "false_abstentions": 0,
+      "ood_abstained_count": 6,
+      "ood_total": 6,
+      "ood_abstention_rate": 1.0,
+      "warm_p50_ms": 1.315,
+      "warm_p95_ms": 2.578,
+      "warm_p99_ms": 3.153
+    },
+    "H_SelectiveSymptomBridge": {
+      "in_domain_ndcg_10": 0.7568,
+      "in_domain_mrr_10": 0.8233,
+      "in_domain_recall_10": 0.95,
+      "debate_2side_recall_5": 0.9167,
+      "class_ndcg_10": {
+        "SYM": 0.8261,
+        "SYMP": 0.7835,
+        "ERR": 0.624,
+        "CTX": 0.7393,
+        "DEB": 0.8112
+      },
+      "scope_violations": 0,
+      "false_abstentions": 0,
+      "ood_abstained_count": 6,
+      "ood_total": 6,
+      "ood_abstention_rate": 1.0,
+      "warm_p50_ms": 1.42,
+      "warm_p95_ms": 2.877,
+      "warm_p99_ms": 3.71
+    }
+  },
+  "step5_ablation_dev": {
+    "FULL_Lean_ModeC (6-Stream BM25F + Ctx BGE + TM2C2 + Scope + Dep + Sym + CRAG)": {
+      "in_domain_ndcg_10": 0.7568,
+      "in_domain_mrr_10": 0.8233,
+      "in_domain_recall_10": 0.95,
+      "debate_2side_recall_5": 0.9167,
+      "class_ndcg_10": {
+        "SYM": 0.8261,
+        "SYMP": 0.7835,
+        "ERR": 0.624,
+        "CTX": 0.7393,
+        "DEB": 0.8112
+      },
+      "scope_violations": 0,
+      "false_abstentions": 0,
+      "ood_abstained_count": 6,
+      "ood_total": 6,
+      "ood_abstention_rate": 1.0,
+      "warm_p50_ms": 1.29,
+      "warm_p95_ms": 2.325,
+      "warm_p99_ms": 2.791,
+      "ndcg_delta_vs_full": 0.0
+    },
+    "ON_ExtraConstantScoreTier (Killed: No gain over 6-Stream BM25F)": {
+      "in_domain_ndcg_10": 0.7574,
+      "in_domain_mrr_10": 0.8233,
+      "in_domain_recall_10": 0.95,
+      "debate_2side_recall_5": 0.9167,
+      "class_ndcg_10": {
+        "SYM": 0.8288,
+        "SYMP": 0.7835,
+        "ERR": 0.624,
+        "CTX": 0.7393,
+        "DEB": 0.8112
+      },
+      "scope_violations": 0,
+      "false_abstentions": 0,
+      "ood_abstained_count": 6,
+      "ood_total": 6,
+      "ood_abstention_rate": 1.0,
+      "warm_p50_ms": 1.543,
+      "warm_p95_ms": 2.474,
+      "warm_p99_ms": 2.887,
+      "ndcg_delta_vs_full": 0.0006
+    },
+    "OFF_PunctSafeBM25F (Revert to Flat BM25)": {
+      "in_domain_ndcg_10": 0.7147,
+      "in_domain_mrr_10": 0.7844,
+      "in_domain_recall_10": 0.8778,
+      "debate_2side_recall_5": 0.9167,
+      "class_ndcg_10": {
+        "SYM": 0.8421,
+        "SYMP": 0.7376,
+        "ERR": 0.5981,
+        "CTX": 0.6284,
+        "DEB": 0.7672
+      },
+      "scope_violations": 0,
+      "false_abstentions": 0,
+      "ood_abstained_count": 2,
+      "ood_total": 6,
+      "ood_abstention_rate": 0.3333,
+      "warm_p50_ms": 2.88,
+      "warm_p95_ms": 4.86,
+      "warm_p99_ms": 5.74,
+      "ndcg_delta_vs_full": -0.0421
+    },
+    "OFF_ContextualPrefix (Revert to Raw Chunk Vec)": {
+      "in_domain_ndcg_10": 0.711,
+      "in_domain_mrr_10": 0.7944,
+      "in_domain_recall_10": 0.8681,
+      "debate_2side_recall_5": 0.8333,
+      "class_ndcg_10": {
+        "SYM": 0.8583,
+        "SYMP": 0.7376,
+        "ERR": 0.6343,
+        "CTX": 0.5604,
+        "DEB": 0.7643
+      },
+      "scope_violations": 0,
+      "false_abstentions": 0,
+      "ood_abstained_count": 6,
+      "ood_total": 6,
+      "ood_abstention_rate": 1.0,
+      "warm_p50_ms": 1.331,
+      "warm_p95_ms": 2.464,
+      "warm_p99_ms": 3.461,
+      "ndcg_delta_vs_full": -0.0458
+    },
+    "OFF_HardBankScopeGate": {
+      "in_domain_ndcg_10": 0.7519,
+      "in_domain_mrr_10": 0.8233,
+      "in_domain_recall_10": 0.9417,
+      "debate_2side_recall_5": 0.9167,
+      "class_ndcg_10": {
+        "SYM": 0.8261,
+        "SYMP": 0.7608,
+        "ERR": 0.624,
+        "CTX": 0.7374,
+        "DEB": 0.8112
+      },
+      "scope_violations": 0,
+      "false_abstentions": 0,
+      "ood_abstained_count": 6,
+      "ood_total": 6,
+      "ood_abstention_rate": 1.0,
+      "warm_p50_ms": 1.358,
+      "warm_p95_ms": 2.27,
+      "warm_p99_ms": 3.383,
+      "ndcg_delta_vs_full": -0.0049
+    },
+    "OFF_DeprecationFilter": {
+      "in_domain_ndcg_10": 0.7492,
+      "in_domain_mrr_10": 0.8067,
+      "in_domain_recall_10": 0.95,
+      "debate_2side_recall_5": 0.9167,
+      "class_ndcg_10": {
+        "SYM": 0.8261,
+        "SYMP": 0.7835,
+        "ERR": 0.5936,
+        "CTX": 0.7313,
+        "DEB": 0.8112
+      },
+      "scope_violations": 1,
+      "false_abstentions": 0,
+      "ood_abstained_count": 6,
+      "ood_total": 6,
+      "ood_abstention_rate": 1.0,
+      "warm_p50_ms": 1.335,
+      "warm_p95_ms": 2.344,
+      "warm_p99_ms": 2.672,
+      "ndcg_delta_vs_full": -0.0076
+    },
+    "OFF_SymptomBridge (E_3Lane)": {
+      "in_domain_ndcg_10": 0.7537,
+      "in_domain_mrr_10": 0.827,
+      "in_domain_recall_10": 0.9389,
+      "debate_2side_recall_5": 0.9167,
+      "class_ndcg_10": {
+        "SYM": 0.8261,
+        "SYMP": 0.7679,
+        "ERR": 0.624,
+        "CTX": 0.7393,
+        "DEB": 0.8112
+      },
+      "scope_violations": 0,
+      "false_abstentions": 0,
+      "ood_abstained_count": 6,
+      "ood_total": 6,
+      "ood_abstention_rate": 1.0,
+      "warm_p50_ms": 1.268,
+      "warm_p95_ms": 1.862,
+      "warm_p99_ms": 2.411,
+      "ndcg_delta_vs_full": -0.0031
+    },
+    "OFF_CRAGAbstention": {
+      "in_domain_ndcg_10": 0.7568,
+      "in_domain_mrr_10": 0.8233,
+      "in_domain_recall_10": 0.95,
+      "debate_2side_recall_5": 0.9167,
+      "class_ndcg_10": {
+        "SYM": 0.8261,
+        "SYMP": 0.7835,
+        "ERR": 0.624,
+        "CTX": 0.7393,
+        "DEB": 0.8112
+      },
+      "scope_violations": 0,
+      "false_abstentions": 0,
+      "ood_abstained_count": 0,
+      "ood_total": 6,
+      "ood_abstention_rate": 0.0,
+      "warm_p50_ms": 1.504,
+      "warm_p95_ms": 2.219,
+      "warm_p99_ms": 2.596,
+      "ndcg_delta_vs_full": 0.0
+    }
+  },
+  "holdout_leaderboard": {
+    "A0_LlmsTxtRouter": {
+      "in_domain_ndcg_10": 0.7089,
+      "in_domain_mrr_10": 0.7565,
+      "in_domain_recall_10": 0.8694,
+      "debate_2side_recall_5": 0.8333,
+      "class_ndcg_10": {
+        "SYM": 0.8619,
+        "SYMP": 0.6686,
+        "ERR": 0.5543,
+        "CTX": 0.7238,
+        "DEB": 0.7356
+      },
+      "scope_violations": 2,
+      "false_abstentions": 0,
+      "ood_abstained_count": 0,
+      "ood_total": 6,
+      "ood_abstention_rate": 0.0,
+      "warm_p50_ms": 0.5,
+      "warm_p95_ms": 1.01,
+      "warm_p99_ms": 1.289
+    },
+    "A_FlatBM25": {
+      "in_domain_ndcg_10": 0.6721,
+      "in_domain_mrr_10": 0.6901,
+      "in_domain_recall_10": 0.8417,
+      "debate_2side_recall_5": 0.5833,
+      "class_ndcg_10": {
+        "SYM": 0.8607,
+        "SYMP": 0.6307,
+        "ERR": 0.4921,
+        "CTX": 0.7991,
+        "DEB": 0.5777
+      },
+      "scope_violations": 1,
+      "false_abstentions": 0,
+      "ood_abstained_count": 0,
+      "ood_total": 6,
+      "ood_abstention_rate": 0.0,
+      "warm_p50_ms": 2.457,
+      "warm_p95_ms": 5.017,
+      "warm_p99_ms": 6.102
+    },
+    "B1_Dense_MiniLM_Raw": {
+      "in_domain_ndcg_10": 0.563,
+      "in_domain_mrr_10": 0.5986,
+      "in_domain_recall_10": 0.7217,
+      "debate_2side_recall_5": 0.75,
+      "class_ndcg_10": {
+        "SYM": 0.8532,
+        "SYMP": 0.5441,
+        "ERR": 0.3483,
+        "CTX": 0.4605,
+        "DEB": 0.6087
+      },
+      "scope_violations": 2,
+      "false_abstentions": 0,
+      "ood_abstained_count": 0,
+      "ood_total": 6,
+      "ood_abstention_rate": 0.0,
+      "warm_p50_ms": 0.292,
+      "warm_p95_ms": 0.39,
+      "warm_p99_ms": 0.444
+    },
+    "B3_Dense_BGE_Ctx": {
+      "in_domain_ndcg_10": 0.7883,
+      "in_domain_mrr_10": 0.8528,
+      "in_domain_recall_10": 0.9139,
+      "debate_2side_recall_5": 0.9167,
+      "class_ndcg_10": {
+        "SYM": 0.9555,
+        "SYMP": 0.7946,
+        "ERR": 0.5653,
+        "CTX": 0.7601,
+        "DEB": 0.8659
+      },
+      "scope_violations": 1,
+      "false_abstentions": 0,
+      "ood_abstained_count": 0,
+      "ood_total": 6,
+      "ood_abstention_rate": 0.0,
+      "warm_p50_ms": 0.273,
+      "warm_p95_ms": 0.404,
+      "warm_p99_ms": 0.509
+    },
+    "C_Hybrid_RRF": {
+      "in_domain_ndcg_10": 0.7928,
+      "in_domain_mrr_10": 0.85,
+      "in_domain_recall_10": 0.8889,
+      "debate_2side_recall_5": 1.0,
+      "class_ndcg_10": {
+        "SYM": 0.9682,
+        "SYMP": 0.7146,
+        "ERR": 0.6037,
+        "CTX": 0.843,
+        "DEB": 0.8346
+      },
+      "scope_violations": 1,
+      "false_abstentions": 0,
+      "ood_abstained_count": 0,
+      "ood_total": 6,
+      "ood_abstention_rate": 0.0,
+      "warm_p50_ms": 2.824,
+      "warm_p95_ms": 5.418,
+      "warm_p99_ms": 6.658
+    },
+    "D_SaStyle_TM2C2": {
+      "in_domain_ndcg_10": 0.8233,
+      "in_domain_mrr_10": 0.8889,
+      "in_domain_recall_10": 0.9,
+      "debate_2side_recall_5": 0.9167,
+      "class_ndcg_10": {
+        "SYM": 0.9579,
+        "SYMP": 0.7515,
+        "ERR": 0.619,
+        "CTX": 0.8939,
+        "DEB": 0.8941
+      },
+      "scope_violations": 1,
+      "false_abstentions": 0,
+      "ood_abstained_count": 6,
+      "ood_total": 6,
+      "ood_abstention_rate": 1.0,
+      "warm_p50_ms": 1.215,
+      "warm_p95_ms": 2.378,
+      "warm_p99_ms": 2.993
+    },
+    "E_BankingNative_3Lane": {
+      "in_domain_ndcg_10": 0.8298,
+      "in_domain_mrr_10": 0.89,
+      "in_domain_recall_10": 0.9111,
+      "debate_2side_recall_5": 0.9167,
+      "class_ndcg_10": {
+        "SYM": 0.957,
+        "SYMP": 0.7543,
+        "ERR": 0.6433,
+        "CTX": 0.9099,
+        "DEB": 0.8845
+      },
+      "scope_violations": 0,
+      "false_abstentions": 0,
+      "ood_abstained_count": 6,
+      "ood_total": 6,
+      "ood_abstention_rate": 1.0,
+      "warm_p50_ms": 1.347,
+      "warm_p95_ms": 2.367,
+      "warm_p99_ms": 3.454
+    },
+    "H_SelectiveSymptomBridge": {
+      "in_domain_ndcg_10": 0.8339,
+      "in_domain_mrr_10": 0.8942,
+      "in_domain_recall_10": 0.9278,
+      "debate_2side_recall_5": 0.9167,
+      "class_ndcg_10": {
+        "SYM": 0.957,
+        "SYMP": 0.7749,
+        "ERR": 0.6433,
+        "CTX": 0.9099,
+        "DEB": 0.8845
+      },
+      "scope_violations": 0,
+      "false_abstentions": 0,
+      "ood_abstained_count": 6,
+      "ood_total": 6,
+      "ood_abstention_rate": 1.0,
+      "warm_p50_ms": 1.905,
+      "warm_p95_ms": 3.615,
+      "warm_p99_ms": 4.887
+    }
+  },
+  "winning_config": {
+    "winning_architecture": "E_BankingNative_3Lane",
+    "embedding_backbone": "BAAI/bge-small-en-v1.5",
+    "embedding_matrix_file": "bge_small_ctx.npy",
+    "contextual_prefix_enabled": true,
+    "bm25f": {
+      "type": "Robertson_True_BM25F_PunctuationSafe",
+      "k1": 1.2,
+      "b": 0.75,
+      "field_weights": {
+        "title": 3.5,
+        "heading": 2.5,
+        "category": 1.5,
+        "endpoints": 4.5,
+        "identifiers": 3.5,
+        "body": 1.0
+      }
+    },
+    "exact_tier": {
+      "type": "Turnbull_ConstantScore_Endpoint_Identifier_HTTPCode",
+      "weight": 0.35,
+      "max_identifier_df": 25
+    },
+    "fusion": {
+      "type": "Bruch_TM2C2_Convex",
+      "alpha_semantic": 0.75,
+      "one_minus_alpha_lexical": 0.25
+    },
+    "guardrails": {
+      "hard_bank_scope_gate": true,
+      "deprecation_penalty": 0.25,
+      "selective_symptom_bridge": true,
+      "crag_abstention_threshold": 0.646,
+      "crag_formula": "0.65 * max_sem + 0.35 * min(1.0, max_lex / 18.0) + 0.25 * max_ex"
+    },
+    "graduation_proof": {
+      "all_gates_passed": true,
+      "zero_raw_writes_verified": true,
+      "raw_tree_sha256": "883af657e0fb8f82c9d356b578d6b8754a0654780eb216c77cee8c0ead504ed5",
+      "dev_metrics": {
+        "in_domain_ndcg_10": 0.7537,
+        "in_domain_mrr_10": 0.827,
+        "in_domain_recall_10": 0.9389,
+        "debate_2side_recall_5": 0.9167,
+        "class_ndcg_10": {
+          "SYM": 0.8261,
+          "SYMP": 0.7679,
+          "ERR": 0.624,
+          "CTX": 0.7393,
+          "DEB": 0.8112
+        },
+        "scope_violations": 0,
+        "false_abstentions": 0,
+        "ood_abstained_count": 6,
+        "ood_total": 6,
+        "ood_abstention_rate": 1.0,
+        "warm_p50_ms": 1.315,
+        "warm_p95_ms": 2.578,
+        "warm_p99_ms": 3.153
+      },
+      "holdout_metrics": {
+        "in_domain_ndcg_10": 0.8298,
+        "in_domain_mrr_10": 0.89,
+        "in_domain_recall_10": 0.9111,
+        "debate_2side_recall_5": 0.9167,
+        "class_ndcg_10": {
+          "SYM": 0.957,
+          "SYMP": 0.7543,
+          "ERR": 0.6433,
+          "CTX": 0.9099,
+          "DEB": 0.8845
+        },
+        "scope_violations": 0,
+        "false_abstentions": 0,
+        "ood_abstained_count": 6,
+        "ood_total": 6,
+        "ood_abstention_rate": 1.0,
+        "warm_p50_ms": 1.347,
+        "warm_p95_ms": 2.367,
+        "warm_p99_ms": 3.454
+      },
+      "baseline_comparisons_holdout": {
+        "vs_D_SaStyle_TM2C2": {
+          "mean_delta": 0.0065,
+          "ci95_low": -0.0051,
+          "ci95_high": 0.0197,
+          "p_value": 0.31
+        },
+        "vs_A0_LlmsTxtRouter": {
+          "mean_delta": 0.121,
+          "ci95_low": 0.0556,
+          "ci95_high": 0.1938,
+          "p_value": 0.0005
+        },
+        "vs_B1_Dense_MiniLM_Raw": {
+          "mean_delta": 0.2668,
+          "ci95_low": 0.1778,
+          "ci95_high": 0.3687,
+          "p_value": 0.0005
+        }
+      }
+    }
+  }
+}
