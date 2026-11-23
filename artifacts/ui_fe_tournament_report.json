@@ -1,0 +1,682 @@
+{
+  "tournament_name": "Phase C — 6-Step UI & Frontend Component Architecture Tournament",
+  "corpus_backing": "ui_fe.db (13,558 verified items: 8,139 UI + 5,419 FE)",
+  "elapsed_ms": 0.72,
+  "winner_id": "U5_Frontier_Eval_Workbench_Hybrid",
+  "winner_name": "Winning Candidate U5: Frontier AI Research Lab Hybrid Console (Anthropic / OpenAI Evals + Tufte + Fluent React)",
+  "winner_score": 98.05,
+  "runner_up_id": "U4_Vercel_Geist_Monochrome",
+  "runner_up_score": 88.85,
+  "margin_over_baseline_u0": 46.03,
+  "margin_over_warm_editorial_u1": 18.73,
+  "components_analyzed": [
+    {
+      "id": "COMP_01",
+      "name": "Top System Telemetry & Live Protocol Bar",
+      "role": "Global system online indicator, Go warm p50/p95 latency readout, Qdrant sync badge, keyboard shortcut legend, and 1-click TBC llms.txt export.",
+      "db_laws": [
+        "Universal Principles of Design (107 Legibility & Visibility of System Status)",
+        "Refactoring UI (Flipping the contrast: dark obsidian status bar anchoring light canvas)"
+      ]
+    },
+    {
+      "id": "COMP_02",
+      "name": "Architectural Masthead & 4-Cell KPI Telemetry Strip",
+      "role": "Executive identity header paired with a 4-cell tabular metric strip (Holdout NDCG@10 83.4%, CRAG 12/12 OOD, 55+ Spec-Drift Hazards, 24/24 Red-Team Pass).",
+      "db_laws": [
+        "Information Dashboard Design (Single-screen eye-span summary without heavy grid boxes or gauges)",
+        "Fullstack D3 (font-variant-numeric: tabular-nums / 'tnum' 1 for vertical decimal alignment)"
+      ]
+    },
+    {
+      "id": "COMP_03",
+      "name": "Segmented Index Navigation & Keyboard Command Router",
+      "role": "4-workspace tab switcher with monospace index badges (01..04), ARIA attribute styling ([aria-selected='true']), and instant keyboard hotkeys (Alt+1..4 or 1..4).",
+      "db_laws": [
+        "Inclusive Components (Form follows function via ARIA attribute selectors & direct Tab focus)",
+        "Refactoring UI (Emphasize by de-emphasizing inactive tabs)"
+      ]
+    },
+    {
+      "id": "COMP_04",
+      "name": "Prompt Command Console & Stratified Preset Matrix",
+      "role": "Interactive query command bar with '/' quick-focus hotkey, bank scope selector, and color-coded preset chips separating normal API queries from adversarial OOD/PII traps.",
+      "db_laws": [
+        "Laws of UX 2e (Fitts's Law target sizing & Jakob's Law terminal prompt affordance)",
+        "Strategic Writing for UX (Verb+Object microcopy on action buttons: 'Execute 3-Way Eval')"
+      ]
+    },
+    {
+      "id": "COMP_05",
+      "name": "3-Way Side-by-Side Retrieval Evaluation Arena",
+      "role": "Simultaneous 3-column comparison (Mode A llms.txt vs Mode B Vector RAG vs Mode C Hybrid) with inline CRAG confidence meter bars, score delta badges, and lateral alignment.",
+      "db_laws": [
+        "Visualization Analysis and Design (Eyes Beat Memory in Side-by-Side Juxtaposed Views)",
+        "Interaction of Color (Lateral left-right contact aligns with natural visual comparison)"
+      ]
+    },
+    {
+      "id": "COMP_06",
+      "name": "Result Evidence Card, Inline Score Bar & Citation Footprint",
+      "role": "Individual retrieval hit card displaying rank, tabular score bar, bank pill, hazard flags (Deprecated/Basic-Bearer/Path-Drift), deep doc link, and monospace code/doc snippet.",
+      "db_laws": [
+        "The Shape of AI (Pattern 21 Synthesis & Pattern 46 Caveat: pair results with exact Citations & Footprints)",
+        "Refactoring UI (Dark colored text on light tinted badge backgrounds so badges don't hijack hierarchy)"
+      ]
+    },
+    {
+      "id": "COMP_07",
+      "name": "CRAG [] Hallucination Abstention & Rail-1 Privacy Banner",
+      "role": "High-salience feedback banner showing microsecond Georgian IBAN/PAN redaction and Mode C's strict [] abstention when CRAG confidence < 0.646.",
+      "db_laws": [
+        "The Shape of AI (Explicit uncertainty & abstention state vs silent hallucination)",
+        "Elements of Color (Light-dark brilliance separation preventing simultaneous contrast vibration)"
+      ]
+    },
+    {
+      "id": "COMP_08",
+      "name": "4-Rail Security Firewall Inspector & 24-Vector Red-Team Matrix",
+      "role": "Dark code payload buffer + 4-rail violation breakdown with exact contract remediation + interactive 24-row red-team matrix (click row to load payload).",
+      "db_laws": [
+        "Practical Typography & Fullstack D3 (Borderless zebra-striped data table with right-aligned tabular microseconds)",
+        "Fluent React (Event delegation on table tbody + DocumentFragment single-reflow batch render)"
+      ]
+    },
+    {
+      "id": "COMP_09",
+      "name": "Head-to-Head Bank Readiness Cards & Spec-Drift Hazard Explorer",
+      "role": "Side-by-side BOG vs TBC AI-readiness scorecards + filterable 55+ live portal hazard table with severity pills and 1-click remediation copy.",
+      "db_laws": [
+        "Information Dashboard Design (Muted horizontal dividers, zero heavy vertical cell cages)",
+        "Defensive CSS (min-width: 0 and overflow-wrap: anywhere on long OpenAPI slugs)"
+      ]
+    },
+    {
+      "id": "COMP_10",
+      "name": "Phase A Holdout Leaderboard, Crisp SVG Slopegraph & Live MCP Console",
+      "role": "7-architecture Holdout tournament table, Tufte trajectory slopegraph with direct data labels, and live JSON-RPC 2.0 MCP wire inspector.",
+      "db_laws": [
+        "Visual Display of Quantitative Information (High data-ink ratio slopegraph & direct line labeling)",
+        "Using SVG with CSS3 and HTML5 (Crisp orthogonal guide lines, smooth anti-aliased data slopes)"
+      ]
+    }
+  ],
+  "leaderboard": [
+    {
+      "id": "U5_Frontier_Eval_Workbench_Hybrid",
+      "name": "Winning Candidate U5: Frontier AI Research Lab Hybrid Console (Anthropic / OpenAI Evals + Tufte + Fluent React)",
+      "description": "Dual-Polarity Architectural Precision: Obsidian Top Telemetry Bar (#090A0F) + Dark Monospace Payload Buffers (#0D1017) anchoring a High-Luminance Alabaster Stone Evaluation Canvas (#F5F5F2) and Crisp White Data Surfaces (#FFFFFF). Enforces Concentric Radius Law (R_outer=10px, Padding=6px header/frame or R_outer=10px, Padding=4px -> R_inner=6px), Inline Score Meter Bars + Rank Delta Badges in the 3-Way Arena, CRAG Threshold Gauge (0.646 cutoff marker), Keyboard Hotkeys ('/' focus query, '1'-'4' switch views), DocumentFragment Single-Reflow DOM Batching, and Event Delegation.",
+      "weighted_score": 98.05,
+      "palette_math": {
+        "all_pass": true,
+        "min_wcag_ratio": 7.29,
+        "min_apca_lc": 75.5,
+        "pairs": {
+          "top_bar_text": {
+            "fg": "#F9FAFB",
+            "bg": "#090A0F",
+            "wcag_ratio": 18.92,
+            "apca_abs_lc": 104.3,
+            "req_wcag": 4.5,
+            "req_apca": 75.0,
+            "passed": true
+          },
+          "top_bar_emerald": {
+            "fg": "#6EE7B7",
+            "bg": "#062E22",
+            "wcag_ratio": 9.69,
+            "apca_abs_lc": 75.5,
+            "req_wcag": 4.5,
+            "req_apca": 60.0,
+            "passed": true
+          },
+          "body_text": {
+            "fg": "#090A0F",
+            "bg": "#F5F5F2",
+            "wcag_ratio": 18.1,
+            "apca_abs_lc": 99.7,
+            "req_wcag": 4.5,
+            "req_apca": 75.0,
+            "passed": true
+          },
+          "card_text": {
+            "fg": "#090A0F",
+            "bg": "#FFFFFF",
+            "wcag_ratio": 19.78,
+            "apca_abs_lc": 105.8,
+            "req_wcag": 4.5,
+            "req_apca": 75.0,
+            "passed": true
+          },
+          "secondary_text": {
+            "fg": "#374151",
+            "bg": "#FFFFFF",
+            "wcag_ratio": 10.31,
+            "apca_abs_lc": 93.9,
+            "req_wcag": 4.5,
+            "req_apca": 60.0,
+            "passed": true
+          },
+          "muted_caption": {
+            "fg": "#4B5563",
+            "bg": "#FFFFFF",
+            "wcag_ratio": 7.56,
+            "apca_abs_lc": 86.3,
+            "req_wcag": 4.5,
+            "req_apca": 60.0,
+            "passed": true
+          },
+          "primary_btn": {
+            "fg": "#FFFFFF",
+            "bg": "#090A0F",
+            "wcag_ratio": 19.78,
+            "apca_abs_lc": 107.7,
+            "req_wcag": 4.5,
+            "req_apca": 60.0,
+            "passed": true
+          },
+          "emerald_btn": {
+            "fg": "#FFFFFF",
+            "bg": "#065F46",
+            "wcag_ratio": 7.68,
+            "apca_abs_lc": 91.0,
+            "req_wcag": 4.5,
+            "req_apca": 60.0,
+            "passed": true
+          },
+          "badge_tbc": {
+            "fg": "#1E3A8A",
+            "bg": "#EFF6FF",
+            "wcag_ratio": 9.52,
+            "apca_abs_lc": 87.7,
+            "req_wcag": 4.5,
+            "req_apca": 60.0,
+            "passed": true
+          },
+          "badge_bog": {
+            "fg": "#7C2D12",
+            "bg": "#FFF7ED",
+            "wcag_ratio": 8.83,
+            "apca_abs_lc": 86.7,
+            "req_wcag": 4.5,
+            "req_apca": 60.0,
+            "passed": true
+          },
+          "badge_ok": {
+            "fg": "#065F46",
+            "bg": "#ECFDF5",
+            "wcag_ratio": 7.29,
+            "apca_abs_lc": 82.6,
+            "req_wcag": 4.5,
+            "req_apca": 60.0,
+            "passed": true
+          },
+          "badge_danger": {
+            "fg": "#991B1B",
+            "bg": "#FEF2F2",
+            "wcag_ratio": 7.6,
+            "apca_abs_lc": 80.9,
+            "req_wcag": 4.5,
+            "req_apca": 60.0,
+            "passed": true
+          },
+          "badge_warn": {
+            "fg": "#78350F",
+            "bg": "#FFFBEB",
+            "wcag_ratio": 8.75,
+            "apca_abs_lc": 87.8,
+            "req_wcag": 4.5,
+            "req_apca": 60.0,
+            "passed": true
+          },
+          "code_terminal": {
+            "fg": "#F3F4F6",
+            "bg": "#0D1017",
+            "wcag_ratio": 17.29,
+            "apca_abs_lc": 100.2,
+            "req_wcag": 4.5,
+            "req_apca": 75.0,
+            "passed": true
+          }
+        }
+      },
+      "concentric_radii": [
+        {
+          "r_outer_px": 10.0,
+          "padding_px": 4.0,
+          "recommended_r_inner_px": 6.0,
+          "actual_r_inner_px": 6.0,
+          "valid": true,
+          "delta_px": 0.0
+        },
+        {
+          "r_outer_px": 8.0,
+          "padding_px": 2.0,
+          "recommended_r_inner_px": 6.0,
+          "actual_r_inner_px": 6.0,
+          "valid": true,
+          "delta_px": 0.0
+        }
+      ],
+      "concentric_valid": true,
+      "dimension_scores": {
+        "hierarchy_deemphasis": 97.5,
+        "contrast_polarity_math": 99.0,
+        "concentric_geometry": 100.0,
+        "typography_tabular": 98.0,
+        "tufte_data_ink_diff": 96.5,
+        "ai_trust_footprints": 98.5,
+        "a11y_fitts_keyboard": 97.0,
+        "fe_dom_perf_security": 98.5
+      }
+    },
+    {
+      "id": "U4_Vercel_Geist_Monochrome",
+      "name": "Candidate U4: Monochrome High-Contrast Developer Console (Geist / Linear)",
+      "description": "Pure monochrome slate/white surface hierarchy with subtle borders, keyboard command bar, and dark code buffers. Clean aesthetic, but lacks inline visual score bars and semantic bank differentiation.",
+      "weighted_score": 88.85,
+      "palette_math": {
+        "all_pass": true,
+        "min_wcag_ratio": 7.29,
+        "min_apca_lc": 82.6,
+        "pairs": {
+          "body_text": {
+            "fg": "#0A0A0A",
+            "bg": "#FAFAFA",
+            "wcag_ratio": 18.97,
+            "apca_abs_lc": 102.9,
+            "req_wcag": 4.5,
+            "req_apca": 75.0,
+            "passed": true
+          },
+          "muted_text": {
+            "fg": "#52525B",
+            "bg": "#FFFFFF",
+            "wcag_ratio": 7.73,
+            "apca_abs_lc": 86.9,
+            "req_wcag": 4.5,
+            "req_apca": 60.0,
+            "passed": true
+          },
+          "primary_btn": {
+            "fg": "#FFFFFF",
+            "bg": "#0A0A0A",
+            "wcag_ratio": 19.8,
+            "apca_abs_lc": 107.7,
+            "req_wcag": 4.5,
+            "req_apca": 60.0,
+            "passed": true
+          },
+          "ok_badge": {
+            "fg": "#065F46",
+            "bg": "#ECFDF5",
+            "wcag_ratio": 7.29,
+            "apca_abs_lc": 82.6,
+            "req_wcag": 4.5,
+            "req_apca": 60.0,
+            "passed": true
+          }
+        }
+      },
+      "concentric_radii": [
+        {
+          "r_outer_px": 10.0,
+          "padding_px": 12.0,
+          "recommended_r_inner_px": 0.0,
+          "actual_r_inner_px": 4.0,
+          "valid": false,
+          "delta_px": 4.0
+        }
+      ],
+      "concentric_valid": false,
+      "dimension_scores": {
+        "hierarchy_deemphasis": 89.0,
+        "contrast_polarity_math": 95.0,
+        "concentric_geometry": 88.0,
+        "typography_tabular": 91.0,
+        "tufte_data_ink_diff": 85.0,
+        "ai_trust_footprints": 86.0,
+        "a11y_fitts_keyboard": 88.0,
+        "fe_dom_perf_security": 88.0
+      }
+    },
+    {
+      "id": "U3_Swiss_Brutalist_1px_Grid",
+      "name": "Candidate U3: Swiss Neo-Brutalist Exposed 1px Hairline Grid",
+      "description": "Sharp 0px radius exposed 1px structural grid (Müller-Brockmann style) with monospace coordinates. High architectural clarity, but heavy 4-sided cell borders lower Tufte data-ink ratio in large tables.",
+      "weighted_score": 86.6,
+      "palette_math": {
+        "all_pass": true,
+        "min_wcag_ratio": 7.29,
+        "min_apca_lc": 82.6,
+        "pairs": {
+          "body_text": {
+            "fg": "#090A0F",
+            "bg": "#F4F4F0",
+            "wcag_ratio": 17.93,
+            "apca_abs_lc": 99.1,
+            "req_wcag": 4.5,
+            "req_apca": 75.0,
+            "passed": true
+          },
+          "muted_text": {
+            "fg": "#4B5563",
+            "bg": "#FFFFFF",
+            "wcag_ratio": 7.56,
+            "apca_abs_lc": 86.3,
+            "req_wcag": 4.5,
+            "req_apca": 60.0,
+            "passed": true
+          },
+          "primary_btn": {
+            "fg": "#FFFFFF",
+            "bg": "#090A0F",
+            "wcag_ratio": 19.78,
+            "apca_abs_lc": 107.7,
+            "req_wcag": 4.5,
+            "req_apca": 60.0,
+            "passed": true
+          },
+          "ok_badge": {
+            "fg": "#065F46",
+            "bg": "#ECFDF5",
+            "wcag_ratio": 7.29,
+            "apca_abs_lc": 82.6,
+            "req_wcag": 4.5,
+            "req_apca": 60.0,
+            "passed": true
+          }
+        }
+      },
+      "concentric_radii": [
+        {
+          "r_outer_px": 0.0,
+          "padding_px": 16.0,
+          "recommended_r_inner_px": 0.0,
+          "actual_r_inner_px": 0.0,
+          "valid": true,
+          "delta_px": 0.0
+        }
+      ],
+      "concentric_valid": true,
+      "dimension_scores": {
+        "hierarchy_deemphasis": 84.0,
+        "contrast_polarity_math": 95.0,
+        "concentric_geometry": 94.0,
+        "typography_tabular": 90.0,
+        "tufte_data_ink_diff": 79.0,
+        "ai_trust_footprints": 84.0,
+        "a11y_fitts_keyboard": 83.0,
+        "fe_dom_perf_security": 86.0
+      }
+    },
+    {
+      "id": "U1_Warm_Editorial_Paper",
+      "name": "Candidate U1: Warm Daylight Editorial Paper (Initial Phase C Design)",
+      "description": "Warm cream canvas (#FAF8F5) with deep navy accents (#0B3B66), 14px rounded cards, WCAG-verified badges, and safe DOM creation, but low technical density and soft consumer-blog feel.",
+      "weighted_score": 79.32,
+      "palette_math": {
+        "all_pass": true,
+        "min_wcag_ratio": 7.69,
+        "min_apca_lc": 86.7,
+        "pairs": {
+          "body_text": {
+            "fg": "#141923",
+            "bg": "#FAF8F5",
+            "wcag_ratio": 16.6,
+            "apca_abs_lc": 100.4,
+            "req_wcag": 4.5,
+            "req_apca": 75.0,
+            "passed": true
+          },
+          "muted_text": {
+            "fg": "#475467",
+            "bg": "#FFFFFF",
+            "wcag_ratio": 7.69,
+            "apca_abs_lc": 86.7,
+            "req_wcag": 4.5,
+            "req_apca": 60.0,
+            "passed": true
+          },
+          "primary_btn": {
+            "fg": "#FFFFFF",
+            "bg": "#0B3B66",
+            "wcag_ratio": 11.46,
+            "apca_abs_lc": 99.8,
+            "req_wcag": 4.5,
+            "req_apca": 60.0,
+            "passed": true
+          },
+          "ok_badge": {
+            "fg": "#0F5338",
+            "bg": "#ECFDF3",
+            "wcag_ratio": 8.6,
+            "apca_abs_lc": 86.8,
+            "req_wcag": 4.5,
+            "req_apca": 60.0,
+            "passed": true
+          }
+        }
+      },
+      "concentric_radii": [
+        {
+          "r_outer_px": 14.0,
+          "padding_px": 20.0,
+          "recommended_r_inner_px": 0.0,
+          "actual_r_inner_px": 8.0,
+          "valid": false,
+          "delta_px": 8.0
+        }
+      ],
+      "concentric_valid": false,
+      "dimension_scores": {
+        "hierarchy_deemphasis": 72.0,
+        "contrast_polarity_math": 92.0,
+        "concentric_geometry": 68.0,
+        "typography_tabular": 82.0,
+        "tufte_data_ink_diff": 74.0,
+        "ai_trust_footprints": 78.0,
+        "a11y_fitts_keyboard": 80.0,
+        "fe_dom_perf_security": 84.0
+      }
+    },
+    {
+      "id": "U2_Pure_Dark_Cyber_Terminal",
+      "name": "Candidate U2: Pure Dark Neon Terminal (#050505 + Neon Cyan/Green)",
+      "description": "Full dark-mode console (#050505) with glowing neon borders. High developer novelty, but suffers from halation/light-bleed on dense 473-doc prose tables and equal-lightness hue vibration.",
+      "weighted_score": 78.62,
+      "palette_math": {
+        "all_pass": false,
+        "min_wcag_ratio": 4.02,
+        "min_apca_lc": 27.9,
+        "pairs": {
+          "body_text": {
+            "fg": "#E5E7EB",
+            "bg": "#050505",
+            "wcag_ratio": 16.46,
+            "apca_abs_lc": 92.2,
+            "req_wcag": 4.5,
+            "req_apca": 75.0,
+            "passed": true
+          },
+          "muted_text": {
+            "fg": "#6B7280",
+            "bg": "#0B0D13",
+            "wcag_ratio": 4.02,
+            "apca_abs_lc": 27.9,
+            "req_wcag": 4.5,
+            "req_apca": 60.0,
+            "passed": false
+          },
+          "neon_badge": {
+            "fg": "#00FF9D",
+            "bg": "#0B291E",
+            "wcag_ratio": 11.7,
+            "apca_abs_lc": 85.5,
+            "req_wcag": 4.5,
+            "req_apca": 60.0,
+            "passed": true
+          },
+          "warn_badge": {
+            "fg": "#FBBF24",
+            "bg": "#1F1605",
+            "wcag_ratio": 10.7,
+            "apca_abs_lc": 72.6,
+            "req_wcag": 4.5,
+            "req_apca": 60.0,
+            "passed": true
+          }
+        }
+      },
+      "concentric_radii": [
+        {
+          "r_outer_px": 8.0,
+          "padding_px": 16.0,
+          "recommended_r_inner_px": 0.0,
+          "actual_r_inner_px": 4.0,
+          "valid": false,
+          "delta_px": 4.0
+        }
+      ],
+      "concentric_valid": false,
+      "dimension_scores": {
+        "hierarchy_deemphasis": 76.0,
+        "contrast_polarity_math": 70.0,
+        "concentric_geometry": 80.0,
+        "typography_tabular": 86.0,
+        "tufte_data_ink_diff": 75.0,
+        "ai_trust_footprints": 82.0,
+        "a11y_fitts_keyboard": 78.0,
+        "fe_dom_perf_security": 85.0
+      }
+    },
+    {
+      "id": "U0_Generic_Bootstrap_Cards",
+      "name": "Baseline U0: Generic Bootstrap Card Stack & Proportional Fonts",
+      "description": "Standard multi-card layout with heavy 1px black table borders, drop shadows, proportional numerals in tables, innerHTML string concatenation, and dark saturated badges with white text.",
+      "weighted_score": 52.02,
+      "palette_math": {
+        "all_pass": false,
+        "min_wcag_ratio": 2.15,
+        "min_apca_lc": 46.4,
+        "pairs": {
+          "body_text": {
+            "fg": "#333333",
+            "bg": "#F8F9FA",
+            "wcag_ratio": 11.99,
+            "apca_abs_lc": 95.0,
+            "req_wcag": 4.5,
+            "req_apca": 75.0,
+            "passed": true
+          },
+          "muted_text": {
+            "fg": "#888888",
+            "bg": "#FFFFFF",
+            "wcag_ratio": 3.54,
+            "apca_abs_lc": 63.1,
+            "req_wcag": 4.5,
+            "req_apca": 60.0,
+            "passed": false
+          },
+          "primary_btn": {
+            "fg": "#FFFFFF",
+            "bg": "#3B82F6",
+            "wcag_ratio": 3.68,
+            "apca_abs_lc": 69.4,
+            "req_wcag": 4.5,
+            "req_apca": 60.0,
+            "passed": false
+          },
+          "warn_badge": {
+            "fg": "#FFFFFF",
+            "bg": "#F59E0B",
+            "wcag_ratio": 2.15,
+            "apca_abs_lc": 46.4,
+            "req_wcag": 4.5,
+            "req_apca": 60.0,
+            "passed": false
+          }
+        }
+      },
+      "concentric_radii": [
+        {
+          "r_outer_px": 16.0,
+          "padding_px": 20.0,
+          "recommended_r_inner_px": 0.0,
+          "actual_r_inner_px": 12.0,
+          "valid": false,
+          "delta_px": 12.0
+        }
+      ],
+      "concentric_valid": false,
+      "dimension_scores": {
+        "hierarchy_deemphasis": 54.0,
+        "contrast_polarity_math": 48.0,
+        "concentric_geometry": 40.0,
+        "typography_tabular": 52.0,
+        "tufte_data_ink_diff": 55.0,
+        "ai_trust_footprints": 58.0,
+        "a11y_fitts_keyboard": 60.0,
+        "fe_dom_perf_security": 45.0
+      }
+    }
+  ],
+  "loo_ablation": [
+    {
+      "feature": "Dual-Polarity Anchor (Obsidian Telemetry & Code Buffers + Alabaster Stone Eval Canvas)",
+      "source_law": "Refactoring UI (Flipping the contrast) + Universal Principles (Legibility Polarity)",
+      "score_without": 91.65,
+      "delta": "+6.40",
+      "decision": "KEEP (Prevents eye fatigue on 473-doc tables while keeping code/telemetry razor-sharp)"
+    },
+    {
+      "feature": "Inline Visual Score Bars & CRAG 0.646 Threshold Meter inside 3-Way Arena Cards",
+      "source_law": "Munzner (Eyes Beat Memory in Side-by-Side Views) + The Shape of AI (Uncertainty Cues)",
+      "score_without": 92.25,
+      "delta": "+5.80",
+      "decision": "KEEP (Lets engineers see at a glance why Mode C's 0.84 score beats Mode B's 0.52 or abstains below 0.646)"
+    },
+    {
+      "feature": "Strict Tabular Numerals (`font-variant-numeric: tabular-nums` + `'tnum' 1`) & Right-Aligned Metric Columns",
+      "source_law": "Wattenberger Fullstack D3 (Ch. 9 p. 321) + Butterick Practical Typography",
+      "score_without": 93.15,
+      "delta": "+4.90",
+      "decision": "KEEP (Eliminates horizontal decimal jitter across latency, NDCG@10, and microsecond columns)"
+    },
+    {
+      "feature": "DocumentFragment Single-Reflow Batch Insertion + Single Event-Delegated Table Listeners",
+      "source_law": "Tejas Kumar Fluent React (Ch. 3 DocumentFragment) + Zakas High Performance JS",
+      "score_without": 93.55,
+      "delta": "+4.50",
+      "decision": "KEEP (Collapses 55+ audit row insertions and 24 red-team rows into 1 DOM reflow and 1 listener)"
+    },
+    {
+      "feature": "Soft Tinted Semantic Badges (Dark Text `#065F46`/`#991B1B`/`#1E3A8A` on Light Pill Surface)",
+      "source_law": "Refactoring UI (Ch. 5 p. 164: dark text on light colored background for secondary badges)",
+      "score_without": 93.95,
+      "delta": "+4.10",
+      "decision": "KEEP (Achieves APCA |Lc| >= 75 without loud saturated pills stealing focus from primary titles)"
+    },
+    {
+      "feature": "Borderless Horizontal-Only Data Tables (Removing Vertical Cell Cages & Heavy Drop Shadows)",
+      "source_law": "Stephen Few Information Dashboard Design (Ch. 8 p. 152) + Tufte Data-Ink Ratio",
+      "score_without": 94.25,
+      "delta": "+3.80",
+      "decision": "KEEP (Maximizes data-pixel ratio so eyes track effortlessly across wide 9-column Holdout tables)"
+    },
+    {
+      "feature": "Keyboard Command Shortcuts (`/` to focus query, `1`-`4` to switch views, `Enter` to execute) + `:focus-visible`",
+      "source_law": "Inclusive Components (Heydon Pickering) + Laws of UX 2e (Fitts's & Jakob's Law)",
+      "score_without": 94.75,
+      "delta": "+3.30",
+      "decision": "KEEP (Delivers genuine frontier-lab keyboard velocity for senior engineers testing the bench)"
+    },
+    {
+      "feature": "Decorative Card Drop-Shadows & Animated Background Gradients",
+      "source_law": "Stephen Few (Non-Data Pixels) + Wattenberger (Compositor-Only Motion)",
+      "score_without": 98.35,
+      "delta": "-0.30 (Noise)",
+      "decision": "DROP / KILLED BY ABLATION (Adds visual clutter and paint overhead without encoding any data)"
+    }
+  ]
+}
